@@ -1,17 +1,26 @@
-# Welcome to MkDocs
+# Agromart
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+## Sobre a disciplina
 
-## Commands
+## O que é o Agromart?
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## Contribuidores
 
-## Project layout
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/joaolobo10"><img style="border-radius: 60%;" src="https://github.com/joaolobo10.png" width="200px;" alt=""/><br /><sub><b>João Carlos Lobo</b></sub></a><br />
+    <td align="center"><a href="https://github.com/Brenno-Silva01"><img style="border-radius: 60%;" src="https://github.com/Brenno-Silva01.png" width="200px;" alt=""/><br /><sub><b>Brenno da Silva Oliveira</b></sub></a><br />
+    <td align="center"><a href="https://github.com/caiomsabino"><img style="border-radius: 60%;" src="https://github.com/caiomsabino.png" width="200px;" alt=""/><br /><sub><b>Caio Sabino</b></sub></a><br /><a href="Link git" title="Rocketseat"></a></td>
+    <td align="center"><a href="https://github.com/Igor-Thiago"><img style="border-radius: 60%;" src="https://github.com/Igor-Thiago.png" width="200px;" alt=""/><br /><sub><b>Igor Tiago</b></sub></a><br />
+    <td align="center"><a href="https://github.com/JoaoSapiencia"><img style="border-radius: 60%;" src="https://github.com/JoaoSapiencia.png" width="200px;" alt=""/><br /><sub><b>João Victor Sapiência</b></sub></a><br /><a href="Link git" title="Rocketseat"></a></td>
+    <td align="center"><a href="https://github.com/rodrigogontijoo"><img style="border-radius: 60%;" src="https://github.com/rodrigogontijoo.png" width="200px;" alt=""/><br /><sub><b>Rodrigo Gontijo</b></sub></a><br />
+  </tr>
+</table>
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## Referências
+
+## Histórico de versão
+
+| Versão | Data | Descrição | Autor |
+| ---- | ----- | ----- | ---- | 
+| 1.0 | 21/05/2025 | Início da documentação | [João Lobo](https://github.com/joaolobo10) |
