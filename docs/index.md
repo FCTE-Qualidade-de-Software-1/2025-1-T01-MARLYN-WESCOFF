@@ -37,7 +37,11 @@ Desde sua concepção, o Agromart evoluiu para uma solução open source, com in
   </tr>
 </table>
 
-## Referências
+## Processo de avaliação do produto
+
+O processo de avaliação do produto feito pelo nosso grupo, pode ser obseervado através do link abaixo:
+
+[Link do docummento](https://docs.google.com/document/d/18dvDhx76Vlq9br5XaZ8ZYmVb6qWpcmCa9HUBFCGMlmc/edit?tab=t.0)
 
 ## Histórico de versão
 
