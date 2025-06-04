@@ -1,3 +1,11 @@
+## Objetivo de negócio do AGROMART
+
+O Agromart é uma plataforma digital que conecta agricultores familiares a consumidores, facilitando a divulgação e venda de produtos agroecológicos. Criado durante um Hackathon da UnB-FGA em 2020, o projeto evoluiu para atender às necessidades das CSAs, incorporando funcionalidades como geolocalização, filtros, contato direto e pagamento digital. Hoje, segue em desenvolvimento como software open source, promovendo a produção sustentável e o consumo consciente.
+
+A seguir, apresenta-se a primeira etapa do modelo GQM, que consiste na definição do objetivo de negócio do projeto:
+
+Aprimorar a conexão entre agricultores familiares e consumidores, promovendo a divulgação eficiente de produtos agroecológicos por meio de uma plataforma digital acessível, especialmente adaptada ao contexto de CSAs (Comunidades que Sustentam a Agricultura), com funcionalidades que atendem às necessidades de comunicação, localização e transações, inicialmente motivada pela necessidade de superação do isolamento social decorrente da pandemia de COVID-19.
+
 ## Adaptação para Portabilidade
 
 Segue a reformulação do documento com foco em portabilidade, mantendo a estrutura original mas adaptando os objetivos, perguntas e critérios de qualidade:
