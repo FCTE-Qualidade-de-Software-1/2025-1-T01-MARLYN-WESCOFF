@@ -93,5 +93,5 @@ Garantir que a plataforma possa ser facilmente adaptada e executada em diferente
 | 1.0 | 22/05/2025 | Criação da versão inicial | [João Lobo](https://github.com/joaolobo10) | [João Sapiência](JoaoSapiencia) |
 | 1.1 | 03/06/2025 | Revisão do texto do documento | [João Sapiência](JoaoSapiencia) | [Rodrigo Gontijo](rodrigogontijoo) |
 | 1.2 | 03/06/2025 | Revisão do abstraction sheets | [Rodrigo Gontijo](rodrigogontijoo) |  |
-                      
+| 1.3 | 03/06/2025 | Criação das hipotéses de métricas | [João Sapiência](JoaoSapiencia) | [Rodrigo Gontijo](rodrigogontijoo) |
                 
