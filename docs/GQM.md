@@ -137,3 +137,6 @@ A tabela 1 apresenta o objetivo de medição do nosso projeto:
 | 1.1 | 03/06/2025 | Revisão do texto do documento | [João Sapiência](JoaoSapiencia) | [Rodrigo Gontijo](rodrigogontijoo) |
 | 1.2 | 03/06/2025 | Revisão do abstraction sheets | [Rodrigo Gontijo](rodrigogontijoo) |[João Lobo](https://github.com/joaolobo10)  |
 | 1.3 | 03/06/2025 | Adição de títulos e adição dos diagramas | [João Lobo](https://github.com/joaolobo10) | [Rodrigo Gontijo](rodrigogontijoo) |
+| 1.4 | 03/06/2025 | Revisão do abstraction sheets | [Rodrigo Gontijo](rodrigogontijoo) |  |
+| 1.5 | 03/06/2025 | Criação das hipotéses de métricas | [João Sapiência](JoaoSapiencia) | [Rodrigo Gontijo](rodrigogontijoo) |
+              

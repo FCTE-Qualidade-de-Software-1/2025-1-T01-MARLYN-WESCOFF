@@ -4,7 +4,7 @@
     <img src="./assets/icon-agromart.png" height="250"alt="Docusaurus">
 </h1>
 
-<font size="2"><p style="text-align: center">**Imagem 1: **ícone do aplicativo Agromamart</p></font>
+<font size="2"><p style="text-align: center"> **Imagem 1** : Ícone do aplicativo Agromamart</p></font>
 
 ------------------------
 
@@ -23,6 +23,18 @@ O Agromart é um projeto desenvolvido inicialmente durante um Hackathon na UnB-F
 A plataforma permite que agricultores divulguem suas lojas, produtos, preços e localização, enquanto consumidores podem encontrar produtores próximos, entrar em contato e obter informações sobre produtos e pagamentos.
 
 Desde sua concepção, o Agromart evoluiu para uma solução open source, com integração de meios de pagamento digitais, coordenada por professores e estudantes da UnB-FGA.
+
+## Marlyn Wescoff
+
+O nosso grupo é nomeado em homenagem a Marlyn Wescoff Meltzer. Marlyn foi uma das seis programadoras originais do ENIAC (Electronic Numerical Integrator and Computer), o primeiro computador digital eletrônico de uso geral. Durante a Segunda Guerra Mundial, trabalhou no projeto do ENIAC, desenvolvendo programas para calcular trajetórias balísticas, uma tarefa crucial para o esforço de guerra. Naquela época, a programação era feita manualmente, conectando fios e ajustando interruptores, exigindo grande precisão e conhecimento matemático. Marlyn e suas colegas pioneiras desempenharam um papel fundamental na história da computação, embora seu trabalho tenha sido por muito tempo negligenciado.
+
+<p align="center">
+  <img src="./assets/Reprogramming_ENIAC.png" alt="Programadoras do ENIAC" width="600">
+</p>
+
+<p align="center"><strong>Imagem 2:</strong> As programadoras Ruth Lichterman (agachada) e <strong>Marlyn Wescoff (em pé)</strong> reconfigurando o ENIAC, o primeiro computador digital eletrônico de uso geral. Fonte: Wikimedia Commons (<a href="https://en.wikipedia.org/wiki/Marlyn_Meltzer#/media/File:Reprogramming_ENIAC.png">link</a>). Domínio público.
+</p>
+
 
 ## Contribuidores
 
@@ -48,3 +60,4 @@ O processo de avaliação do produto feito pelo nosso grupo, pode ser obseervado
 | Versão | Data | Descrição | Autor | Revisor |
 | ---- | ----- | ----- | ---- | ----- | 
 | 1.0 | 21/05/2025 | Início da documentação | [João Lobo](https://github.com/joaolobo10) |  |
+| 1.1 | 03/06/2025 | Adição do texto sobre Marlyn Wescoff | [Rodrigo Gontijo](https://github.com/rodrigogontijoo) |  |
