@@ -5,6 +5,9 @@ site_url:
 
 theme:
   name: material
+  logo: assets/MarlynMeltzer.jpg
+  font:
+    text: Montserrat
   features:
     - navigation.instant
     - navigation.tracking

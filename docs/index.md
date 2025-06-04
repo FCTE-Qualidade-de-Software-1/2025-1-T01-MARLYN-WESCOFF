@@ -32,8 +32,7 @@ O nosso grupo é nomeado em homenagem a Marlyn Wescoff Meltzer. Marlyn foi uma d
   <img src="./assets/Reprogramming_ENIAC.png" alt="Programadoras do ENIAC" width="600">
 </p>
 
-<p align="center"><strong>Imagem 2:</strong> As programadoras Ruth Lichterman (agachada) e <strong>Marlyn Wescoff (em pé)</strong> reconfigurando o ENIAC, o primeiro computador digital eletrônico de uso geral. Fonte: Wikimedia Commons (<a href="https://en.wikipedia.org/wiki/Marlyn_Meltzer#/media/File:Reprogramming_ENIAC.png">link</a>). Domínio público.
-</p>
+<font size="2"><p style="text-align: center">**Imagem 2:** As programadoras Ruth Lichterman (agachada) e <strong>Marlyn Wescoff (em pé)</strong> reconfigurando o ENIAC, o primeiro computador digital eletrônico de uso geral. Fonte: Wikimedia Commons (<a href="https://en.wikipedia.org/wiki/Marlyn_Meltzer#/media/File:Reprogramming_ENIAC.png">link</a>). Domínio público.</p></font>
 
 
 ## Contribuidores
@@ -48,12 +47,6 @@ O nosso grupo é nomeado em homenagem a Marlyn Wescoff Meltzer. Marlyn foi uma d
     <td align="center"><a href="https://github.com/rodrigogontijoo"><img style="border-radius: 60%;" src="https://github.com/rodrigogontijoo.png" width="200px;" alt=""/><br /><sub><b>Rodrigo Gontijo</b></sub></a><br />
   </tr>
 </table>
-
-## Processo de avaliação do produto
-
-O processo de avaliação do produto feito pelo nosso grupo, pode ser obseervado através do link abaixo:
-
-[Link do docummento](https://docs.google.com/document/d/18dvDhx76Vlq9br5XaZ8ZYmVb6qWpcmCa9HUBFCGMlmc/edit?tab=t.0)
 
 ## Histórico de versão
 
