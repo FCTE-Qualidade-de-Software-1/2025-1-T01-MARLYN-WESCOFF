@@ -30,11 +30,11 @@ Garantir que a plataforma possa ser facilmente adaptada e executada em diferente
 
 ### Perguntas
 
-| ID | Pergunta |
-| --- | ------- |
-| Q1 | A interface mantém sua usabilidade básica em diferentes dispositivos (mobile/desktop)? |
-| Q2 | Os elementos visuais se comportam consistentemente em vários navegadores? |
-| Q3 | Existem limitações de desempenho ou funcionalidades quando o software roda em diferentes plataformas? |
+| ID | Pergunta | Hipótese |
+| --- | ------- | -------- |
+| Q1 | A interface mantém sua usabilidade básica em diferentes dispositivos (mobile/desktop)? | Espera-se que pelo menos 90% dos usuários consigam realizar as tarefas principais em ambos os dispositivos. |
+| Q2 | Os elementos visuais se comportam consistentemente em vários navegadores? | Espera-se que no mínimo 95% das páginas mantenham o mesmo layout e comportamento entre os navegadores mais utilizados. |
+| Q3 | Existem limitações de desempenho ou funcionalidades quando o software roda em diferentes plataformas? | Espera-se que menos de 10% dos testes apresentem perda significativa de desempenho ou falhas de funcionalidade entre plataformas. |
 
 
 ### Abstraction Sheet
@@ -53,12 +53,13 @@ Garantir que a plataforma possa ser facilmente adaptada e executada em diferente
 
 ### Perguntas
 
-| ID | Pergunta                                                                                                                                 |
-| -- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| Q4 | O software é compatível com diferentes sistemas operacionais e dispositivos (Windows, Linux, Mac, Android, iOS)?                         |
-| Q5 | O processo de instalação é simples, automatizado e bem documentado para qualquer tipo de usuário?                                        |
-| Q6 | Após a instalação, a configuração inicial é intuitiva e possui guias ou assistentes que facilitam o processo?                            |
-| Q7 | São necessárias dependências externas, permissões especiais ou configurações manuais complicadas para o software funcionar corretamente? |
+| ID | Pergunta                                                                                                                                 | Hipótese                                                                                                                                 |
+| -- | ---------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| Q4 | O software é compatível com diferentes sistemas operacionais e dispositivos (Windows, Linux, Mac, Android, iOS)?                         | Espera-se que o software funcione corretamente em pelo menos **95% das combinações de sistema operacional e dispositivo** testadas.      |
+| Q5 | O processo de instalação é simples, automatizado e bem documentado para qualquer tipo de usuário?                                        | Espera-se que pelo menos **90% dos usuários consigam instalar o software sem ajuda técnica**, seguindo apenas a documentação oficial.    |
+| Q6 | Após a instalação, a configuração inicial é intuitiva e possui guias ou assistentes que facilitam o processo?                            | Espera-se que **85% dos usuários** completem a configuração inicial sem erros ou necessidade de suporte externo.                         |
+| Q7 | São necessárias dependências externas, permissões especiais ou configurações manuais complicadas para o software funcionar corretamente? | Espera-se que **menos de 10% dos casos** exijam configurações complexas ou permissões avançadas para o funcionamento básico do software. |
+
 
 ### Abstraction Sheet
 
