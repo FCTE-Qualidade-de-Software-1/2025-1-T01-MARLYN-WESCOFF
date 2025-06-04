@@ -1,3 +1,11 @@
+## Objetivo de negócio do AGROMART
+
+O Agromart é uma plataforma digital que conecta agricultores familiares a consumidores, facilitando a divulgação e venda de produtos agroecológicos. Criado durante um Hackathon da UnB-FGA em 2020, o projeto evoluiu para atender às necessidades das CSAs, incorporando funcionalidades como geolocalização, filtros, contato direto e pagamento digital. Hoje, segue em desenvolvimento como software open source, promovendo a produção sustentável e o consumo consciente.
+
+A seguir, apresenta-se a primeira etapa do modelo GQM, que consiste na definição do objetivo de negócio do projeto:
+
+Aprimorar a conexão entre agricultores familiares e consumidores, promovendo a divulgação eficiente de produtos agroecológicos por meio de uma plataforma digital acessível, especialmente adaptada ao contexto de CSAs (Comunidades que Sustentam a Agricultura), com funcionalidades que atendem às necessidades de comunicação, localização e transações, inicialmente motivada pela necessidade de superação do isolamento social decorrente da pandemia de COVID-19.
+
 ## Adaptação para Portabilidade
 
 Segue a reformulação do documento com foco em portabilidade, mantendo a estrutura original mas adaptando os objetivos, perguntas e critérios de qualidade:
@@ -18,8 +26,6 @@ Garantir que a plataforma possa ser facilmente adaptada e executada em diferente
 
 ---
 
-# Questões - Objetivo de Medição
-
 ## Objetivo 1: Verificar compatibilidade multiplataforma
 
 ### Perguntas
@@ -28,52 +34,42 @@ Garantir que a plataforma possa ser facilmente adaptada e executada em diferente
 | --- | ------- |
 | Q1 | A interface mantém sua usabilidade básica em diferentes dispositivos (mobile/desktop)? |
 | Q2 | Os elementos visuais se comportam consistentemente em vários navegadores? |
-| Q3 | O sistema requer configurações especiais para funcionar em diferentes ambientes? |
+| Q3 | Existem limitações de desempenho ou funcionalidades quando o software roda em diferentes plataformas? |
 
 
 ### Abstraction Sheet
 
-| **Elemento** | **Descrição** |
-|--------------|---------------|
-| **Object** | 	Sistema em diferentes ambientes de execução |
-| **Purpose** | Avaliar se a solução mantém funcionalidade e usabilidade básica em diversos contextos |
-| **Quality Focus** | - Consistência visual entre plataformas - Funcionalidade equivalente - Tempo de adaptação para novos ambientes - Taxa de falhas por incompatibilidade |
-| **Baseline Hypotheses** | - Sistemas responsivos reduzem custos de adaptação em 40% - Incompatibilidade com navegadores aumenta taxas de abandono em 35% - Padrões abertos melhoram a portabilidade em 50%|
-| **Variation Factors** | - Uso de tecnologias cross-platform - Dependência de recursos específicos de SO - Variações de hardware - Política de suporte a versões antigas |
-| **Impact of Variation Factors** | - Redução de custos com manutenção multiplataforma - Ampliação da base de usuários - Sustentabilidade tecnológica |
-
+| Elemento | Descrição |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Object**                     | **Software Agromart** — Verificar a compatibilidade multiplataforma do sistema em diferentes ambientes (dispositivos e navegadores).|
+| **Purpose**                    | Avaliar se o software mantém seu funcionamento, aparência e usabilidade de forma consistente em diferentes dispositivos e navegadores, sem exigir ajustes complexos.|
+| **Quality Focus**              | - **Portabilidade**<br>- **Usabilidade multiplataforma**<br>- **Consistência visual e funcional** |
+| **Baseline Hypotheses**        | - O sistema deve manter sua usabilidade e consistência visual em diferentes dispositivos (desktop e mobile) e navegadores.<br>- Não deve exigir configurações específicas para isso.|
+| **Variation Factors**          | - Tipo de dispositivo (desktop, notebook, tablet, smartphone)<br>- Navegadores (Chrome, Firefox, Edge, Safari, Opera)<br>- Resoluções de tela<br>- Sistemas operacionais |
+| **Impact of Variation Factors**| - A interface pode perder usabilidade se não se adaptar corretamente a telas menores (mobile).<br>- Elementos visuais podem quebrar ou se desalinharem em navegadores diferentes.<br>- Problemas de compatibilidade podem exigir configurações manuais, afetando a experiência do usuário.<br>- Diferenças de comportamento podem gerar inconsistências no fluxo de trabalho e reduzir a eficiência. |
 ---
 
 ## Objetivo 2: Avaliar facilidade de instalação e configuração
 
 ### Perguntas
 
-| ID  | Pergunta                                                                 |
-|------|--------------------------------------------------------------------------|
-| Q4   | O processo de instalação/acesso é claro para usuários leigos?            |
-| Q5   | O sistema detecta e adapta-se automaticamente às configurações do ambiente? |
-| Q6   | Existem requisitos mínimos claramente comunicados?                      |
-
+| ID | Pergunta                                                                                                                                 |
+| -- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| Q4 | O software é compatível com diferentes sistemas operacionais e dispositivos (Windows, Linux, Mac, Android, iOS)?                         |
+| Q5 | O processo de instalação é simples, automatizado e bem documentado para qualquer tipo de usuário?                                        |
+| Q6 | Após a instalação, a configuração inicial é intuitiva e possui guias ou assistentes que facilitam o processo?                            |
+| Q7 | São necessárias dependências externas, permissões especiais ou configurações manuais complicadas para o software funcionar corretamente? |
 
 ### Abstraction Sheet
 
-## Abstraction Sheet
-
-| Element               | Descrição                                                                 |
-|---------------------- |--------------------------------------------------------------------------|
-| **Object**            | Processos de implantação e configuração                                   |
-| **Purpose**           | Verificar a facilidade de disponibilização do sistema em novos ambientes |
-| **Quality Focus**     | - Clareza das instruções de instalação                                    |
-|                       | - Automação de configurações                                             |
-|                       | - Compatibilidade retroativa                                             |
-|                       | - Documentação técnica                                                   |
-| **Baseline Hypotheses** | - Instaladores automatizados reduzem erros em 60%                        |
-|                       | - Requisitos mal especificados aumentam falhas na instalação             |
-|                       | - Sistemas modulares facilitam adaptações                                |
-| **Variation Factors** | - Complexidade da arquitetura                                            |
-|                       | - Dependências externas                                                  |
-|                       | - Política de atualizações                                               |
-| **Impact of Variation Factors** | - Redução do tempo de implantação - Menor necessidade de suporte técnico - Escalabilidade da solução |
+| Elemento | Descrição |
+| ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Object**                      | **Software Agromart** — Avaliação das características relacionadas à compatibilidade multiplataforma, instalação e configuração.|
+| **Purpose**                     | Avaliar se o software funciona corretamente em diferentes plataformas e se o processo de instalação e configuração é simples e acessível.|
+| **Quality Focus**               | - **Portabilidade** (compatibilidade multiplataforma)<br>- **Facilidade de instalação e configuração** |
+| **Baseline Hypotheses**         | - O software deve funcionar corretamente em diferentes sistemas operacionais e navegadores.<br>- O processo de instalação e configuração deve ser simples e bem documentado. |
+| **Variation Factors**           | - Sistema operacional (Windows, Linux, macOS, Android, iOS)<br>- Tipo de dispositivo (desktop, mobile)<br>- Navegadores (Chrome, Firefox, Edge, Safari)<br>- Perfil do usuário (técnico ou não técnico)<br>- Dependências externas ou requisitos específicos de ambiente |
+| **Impact of Variation Factors** | - Incompatibilidades podem comprometer a experiência do usuário em determinadas plataformas.<br>- Processos de instalação complexos podem gerar erros ou abandono do uso.<br>- Problemas de renderização podem afetar a usabilidade em navegadores ou dispositivos específicos.<br>- Necessidade de configurações manuais pode reduzir a adoção e aumentar erros. |
 
 ---
 
@@ -93,5 +89,9 @@ Garantir que a plataforma possa ser facilmente adaptada e executada em diferente
 ## Histórico de Versões
 
 | Versão | Data | Descrição | Autor | Revisor |
-|:------:|------|----------|-------|:-------:|
-| 1.0 | 22/05/2025 | Criação da versão inicial | [João Lobo](https://github.com/joaolobo10) | Revisor B |
+|:------:|------|----------|-------|:-------:|                                             
+| 1.0 | 22/05/2025 | Criação da versão inicial | [João Lobo](https://github.com/joaolobo10) | [João Sapiência](JoaoSapiencia) |
+| 1.1 | 03/06/2025 | Revisão do texto do documento | [João Sapiência](JoaoSapiencia) | [Rodrigo Gontijo](rodrigogontijoo) |
+| 1.2 | 03/06/2025 | Revisão do abstraction sheets | [Rodrigo Gontijo](rodrigogontijoo) |  |
+                      
+                
