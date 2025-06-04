@@ -1,7 +1,6 @@
-site_name: Marlyn-Wescoff
-
-repo_name: "2025.1-DetranDF"
-repo_url: 
+repo_url: https://github.com/FCTE-Qualidade-de-Software-1/2025-1-T01-MARLYN-WESCOFF
+repo_name: 2025-1-T01-MARLYN-WESCOFF
+site_name: Grupo Marlyn Wescoff - Turma 1 (2025.1)
 site_url: 
 
 theme:
