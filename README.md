@@ -5,7 +5,7 @@
 Este projeto tem como objetivo aplicar os conceitos e práticas de Qualidade de Software, estudados ao longo da disciplina, na avaliação do aplicativo Agromart. A partir da análise da documentação oficial do sistema [Agromart](https://agromart.github.io/docs/), iremos medir e avaliar a qualidade do software utilizando métricas, modelos e técnicas discutidas em sala de aula, promovendo uma reflexão crítica sobre a qualidade do produto.
 
 ## :paperclip: Link da página de documentação
-[Coloque aqui o link da documentação]
+https://agromart.github.io/docs/docs/intro
 
 ## :star2: Integrantes
 
