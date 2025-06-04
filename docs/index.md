@@ -26,7 +26,7 @@ Desde sua concepção, o Agromart evoluiu para uma solução open source, com in
 
 ## Marlyn Wescoff
 
-O nosso grupo é nomeado em homenagem a Marlyn Wescoff Meltzer. Marlyn foi uma das seis programadoras originais do ENIAC (Electronic Numerical Integrator and Computer), o primeiro computador digital eletrônico de uso geral. Durante a Segunda Guerra Mundial, trabalhou no projeto do ENIAC, desenvolvendo programas para calcular trajetórias balísticas, uma tarefa crucial para o esforço de guerra. Naquela época, a programação era feita manualmente, conectando fios e ajustando interruptores, exigindo grande precisão e conhecimento matemático. Marlyn e suas colegas pioneiras desempenharam um papel fundamental na história da computação, embora seu trabalho tenha sido por muito tempo negligenciado.
+O nosso grupo é nomeado em homenagem a Marlyn Wescoff Meltzer. Marlyn foi uma das seis programadoras originais do ENIAC (Electronic Numerical Integrator and Computer), o primeiro computador digital eletrônico de uso geral. Durante a Segunda Guerra Mundial, trabalhou no projeto do ENIAC, desenvolvendo programas para calcular trajetórias balísticas, uma tarefa crucial para o esforço de guerra. Naquela época, a programação era feita manualmente, conectando fios e ajustando interruptores, exigindo grande precisão e conhecimento matemático. Marlyn e suas colegas pioneiras desempenharam um papel fundamental na história da computação, embora seu trabalho tenha sido por muito tempo negligenciado. 
 
 <p align="center">
   <img src="./assets/Reprogramming_ENIAC.png" alt="Programadoras do ENIAC" width="600">
@@ -34,6 +34,9 @@ O nosso grupo é nomeado em homenagem a Marlyn Wescoff Meltzer. Marlyn foi uma d
 
 <font size="2"><p style="text-align: center">**Imagem 2:** As programadoras Ruth Lichterman (agachada) e <strong>Marlyn Wescoff (em pé)</strong> reconfigurando o ENIAC, o primeiro computador digital eletrônico de uso geral. Fonte: Wikimedia Commons (<a href="https://en.wikipedia.org/wiki/Marlyn_Meltzer#/media/File:Reprogramming_ENIAC.png">link</a>). Domínio público.</p></font>
 
+## Referências
+
+> Marlyn Meltzer. Engineering and Technology History Wiki, 2015. Disponível em: https://ethw.org/Marlyn_Meltzer. Acesso em: 3 jun. 2025.
 
 ## Contribuidores
 
