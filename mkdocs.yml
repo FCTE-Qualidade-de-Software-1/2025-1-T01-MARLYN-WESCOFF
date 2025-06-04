@@ -40,6 +40,5 @@ markdown_extensions:
 
 nav:
   - Início: index.md
-  - GQM: GQM.md
-  - Processo Avaliativo: process.md
-              
+  - Goal Question Metric: GQM.md
+  - Processo Avaliativo: process.md           
