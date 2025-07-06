@@ -42,6 +42,8 @@ markdown_extensions:
   - tables
 
 nav:
-  - Início: index.md
-  - Goal Question Metric: GQM.md
-  - Processo Avaliativo: process.md           
+  - 'Início': index.md
+  - 'Fase 1: Requisitos da Avaliação': fase1.md
+  - 'Fase 2: Especificação da Avaliação': fase2.md
+  - 'Fase 3: Projeto da Avaliação': fase3.md
+  - 'Fase 4: Executar a Avaliação': fase4.md
