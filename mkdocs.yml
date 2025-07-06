@@ -47,3 +47,8 @@ nav:
   - 'Fase 2: Especificação da Avaliação': fase2.md
   - 'Fase 3: Projeto da Avaliação': fase3.md
   - 'Fase 4: Executar a Avaliação': fase4.md
+  - Gerenciamento do Projeto: 
+     - Metodologia: psm/metodologia.md
+     - Desempenho e Processo: psm/desempenho.md
+     - Calendário e Progresso: psm/calendario.md
+     - Recursos e Custos: psm/recursos.md
