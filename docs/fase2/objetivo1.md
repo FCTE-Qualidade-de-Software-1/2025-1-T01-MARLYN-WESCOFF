@@ -13,20 +13,15 @@
 
 **Perguntas (Questions):**
 
-> Q1: O design foi pensado para ser utilizável por todas as pessoas, independentemente de suas limitações físicas, sensoriais ou cognitivas?
-> Hipótese 1:Espera-se que a taxa de sucesso na conclusão de tarefas essenciais por usuários com deficiências (visuais, motoras, etc.) seja de, no mínimo, 85%.
+> Q1: O design foi pensado para ser utilizável por todas as pessoas, independentemente de suas limitações físicas, sensoriais ou cognitivas <br> **Hipótese 1:**Espera-se que a taxa de sucesso na conclusão de tarefas essenciais por usuários com deficiências (visuais, motoras, etc.) seja de, no mínimo, 85%.
 
-> Q2: Informações importantes não dependem apenas de cor?
-> Hipótese 2: Espera-se que 100% dos elementos de feedback (como mensagens de erro/sucesso) utilizem, além da cor, um ícone ou texto explícito para comunicar seu status.
+> Q2: Informações importantes não dependem apenas de cor? <br> **Hipótese 2:** Espera-se que 100% dos elementos de feedback (como mensagens de erro/sucesso) utilizem, além da cor, um ícone ou texto explícito para comunicar seu status.
 
-> Q3: Botões, campos e ícones possuem contraste suficiente?
-> Hipótese 3: Espera-se que 98% dos elementos de texto e componentes de interface (botões, campos) atendam à taxa de contraste mínima de 4.5:1 (WCAG AA).
+> Q3: Botões, campos e ícones possuem contraste suficiente?<br> **Hipótese 3:** Espera-se que 98% dos elementos de texto e componentes de interface (botões, campos) atendam à taxa de contraste mínima de 4.5:1 (WCAG AA).
 
-> Q4: Todo conteúdo não-textual que transmite informação (como imagens, ícones e gráficos) possui uma alternativa textual equivalente que descreve seu propósito para tecnologias assistivas?
-> Hipótese 4: Espera-se que 100% das imagens que comunicam informações relevantes possuam um texto alternativo (alt) preenchido com uma descrição concisa e fiel ao conteúdo da imagem.
+> Q4: Todo conteúdo não-textual que transmite informação (como imagens, ícones e gráficos) possui uma alternativa textual equivalente que descreve seu propósito para tecnologias assistivas? <br> **Hipótese 4:** Espera-se que 100% das imagens que comunicam informações relevantes possuam um texto alternativo (alt) preenchido com uma descrição concisa e fiel ao conteúdo da imagem.
 
-> Q5: Botões mudam de cor ou estado ao serem clicados?
-> Hipótese 5: Espera-se que 100% dos botões interativos do sistema apresentem uma mudança visual distinta (alteração de cor, sombra ou contorno) no estado :active, ou seja, enquanto estão sendo clicados.
+> Q5: Botões mudam de cor ou estado ao serem clicados? <br> **Hipótese 5:** Espera-se que 100% dos botões interativos do sistema apresentem uma mudança visual distinta (alteração de cor, sombra ou contorno) no estado :active, ou seja, enquanto estão sendo clicados.
 
 
 ## Relação entre Objetivos de Medição - Questões e Métricas - Objetivo de Medição 1: Usabilidade
