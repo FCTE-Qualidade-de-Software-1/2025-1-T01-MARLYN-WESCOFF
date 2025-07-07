@@ -2,26 +2,32 @@
 
 <font size="2"><p style="text-align: center">**Tabela 1-** Objetivo de Medição 1: Usabilidade.</p></font>
 
-| Componente        | Descrição                                 |
-|-------------------|------------------------------------------|
-| **Para o propósito de** | Avaliar a portabilidade da solução      |
-| **Com respeito a** | Portabilidade       |
-| **Do ponto de vista da** | Equipe de desenvolvimento        |
-| **No contexto da** | Disciplina de Qualidade de Software     |
-
+| Analisar    | o AgroMart | 
+| ---- | ------ |
+| Para o propósito de | Avaliar se a aplicação é acessível para usuários com necessidades específicas      |
+| Com respeito a | Usabilidade       |
+| Do ponto de vista da | Equipe de desenvolvimento e usuários finais       |
+| No contexto da | Disciplina de Qualidade de Software     |
 
 ## Questões Objetivo de Medição 1: Usabilidade
 
 **Perguntas (Questions):**
 
-> Q1: A interface mantém sua usabilidade básica em diferentes dispositivos (mobile/desktop)?
-> Hipótese 1:Espera-se que pelo menos 90% dos usuários consigam realizar as tarefas principais em ambos os dispositivos.
+> Q1: O design foi pensado para ser utilizável por todas as pessoas, independentemente de suas limitações físicas, sensoriais ou cognitivas?
+> Hipótese 1:Espera-se que a taxa de sucesso na conclusão de tarefas essenciais por usuários com deficiências (visuais, motoras, etc.) seja de, no mínimo, 85%.
 
-> Q2: Os elementos visuais se comportam consistentemente em vários navegadores?
-> Hipótese 2: Espera-se que no mínimo 95% das páginas mantenham o mesmo layout e comportamento entre os navegadores mais utilizados.
+> Q2: Informações importantes não dependem apenas de cor?
+> Hipótese 2: Espera-se que 100% dos elementos de feedback (como mensagens de erro/sucesso) utilizem, além da cor, um ícone ou texto explícito para comunicar seu status.
 
-> Q3:Existem limitações de desempenho ou funcionalidades quando o software roda em diferentes plataformas?
-> Hipótese 3: Espera-se que menos de 10% dos testes apresentem perda significativa de desempenho ou falhas de funcionalidade entre plataformas.
+> Q3: Botões, campos e ícones possuem contraste suficiente?
+> Hipótese 3: Espera-se que 98% dos elementos de texto e componentes de interface (botões, campos) atendam à taxa de contraste mínima de 4.5:1 (WCAG AA).
+
+> Q4: Todo conteúdo não-textual que transmite informação (como imagens, ícones e gráficos) possui uma alternativa textual equivalente que descreve seu propósito para tecnologias assistivas?
+> Hipótese 4: Espera-se que 100% das imagens que comunicam informações relevantes possuam um texto alternativo (alt) preenchido com uma descrição concisa e fiel ao conteúdo da imagem.
+
+> Q5: Botões mudam de cor ou estado ao serem clicados?
+> Hipótese 5: Espera-se que 100% dos botões interativos do sistema apresentem uma mudança visual distinta (alteração de cor, sombra ou contorno) no estado :active, ou seja, enquanto estão sendo clicados.
+
 
 ## Relação entre Objetivos de Medição - Questões e Métricas - Objetivo de Medição 1: Usabilidade
 
@@ -35,10 +41,11 @@ Com base na abordagem Goal-Question-Metric (GQM), selecionamos as seguintes mét
 
 #### Usabilidade
 
-- **M1:**
-- **M2:**
-- **M3:**
-- ...
+- **M1: Taxa de Sucesso da Tarefa para Usuários com Deficiências**
+- **M2: Índice de Conformidade de Feedback Não-Dependente de Cor**
+- **M3: Índice de Conformidade de Contraste (WCAG)**
+- **M4: Cobertura de Alternativas Textuais em Imagens Informativas**
+- **M5: Índice de Conformidade de Feedback de Interação (Estado Ativo)**
 
 ## Níveis de Pontuação das Métricas
 
