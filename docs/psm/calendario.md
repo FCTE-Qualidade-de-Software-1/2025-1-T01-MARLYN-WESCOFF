@@ -6,29 +6,24 @@ Esta seção visa acompanhar a evolução temporal do projeto, avaliando a ader�
 
 ## 2. Cronograma Geral
 
-| Marco / Entregável          | Data Prevista       | Data Realizada      | Status          | Observações                         |
-|----------------------------|---------------------|---------------------|-----------------|-----------------------------------|
-| Início do projeto           | DD/MM/AAAA          | DD/MM/AAAA          | Concluído       |                                   |
-| Definição de requisitos     | DD/MM/AAAA          | DD/MM/AAAA          | Em andamento    | Ajustes necessários em requisitos |
-| Desenvolvimento módulo X    | DD/MM/AAAA          | DD/MM/AAAA          | Atrasado        | Problemas técnicos causaram atraso|
-| Testes                     | DD/MM/AAAA          | DD/MM/AAAA          | Planejado       |                                   |
+| **Fase / Entregável**                | **Data Prevista** | **Data Realizada** | **Status** | **Observações**                           |
+| ------------------------------------ | ----------------- | ------------------ | ---------- | ----------------------------------------- |
+| Fase 1 – Estabelecer Requisitos      | 10/06/2025        | 04/07/2025         | Concluído  | Pequeno ajuste no escopo inicial          |
+| Fase 2 – Especificar Avaliação (GQM) | 13/06/2025        | 04/07/2025         | Concluído  | Reestruturação das perguntas GQM          |
+| Fase 3 – Projeto da Avaliação        | 17/06/2025        | 05/07/2025         | Concluído  | Alinhado com plano de coleta do Q-Rapids  |
+| Fase 4 – Execução da Avaliação       | 24/06/2025        | -         | Em curso  | - |
+
 
 ## 3. Análise do Progresso
 
-- Até o momento, o projeto encontra-se com X% das atividades concluídas.
-- O cronograma sofreu atrasos principalmente nas fases de ______ devido a ______.
-- As ações tomadas para mitigação dos atrasos incluem _______.
-- O acompanhamento contínuo tem permitido ajustes rápidos, minimizando impactos maiores.
+- Até o momento, o projeto encontra-se com **85% das atividades concluídas**.
+- O cronograma sofreu pequenos atrasos principalmente na fase de testes e desenvolvimento do módulo de setup, devido à **falta de padronização inicial no ambiente de desenvolvimento**.
 
-## 4. Gráficos e Indicadores
+## 4. Considerações Finais
 
-*(Aqui pode ser inserido gráfico de Gantt, burndown chart, ou outros indicadores visuais do progresso)*
-
-## 5. Considerações Finais
-
-- O monitoramento constante do calendário tem sido fundamental para manter a equipe alinhada e focada nos objetivos.
-- Recomenda-se revisão semanal do cronograma para antecipar possíveis atrasos.
-- A colaboração entre as áreas tem favorecido a resolução rápida de impedimentos relacionados ao tempo.
+- O monitoramento constante do calendário tem sido importante para manter as entregar organizadas e as tarefas que devem ser feitas para cada etapa.
+- Recomenda-se manter as reuniões semanais de alinhamento e análise de progresso.
+- A colaboração entre membros permitiu a readequação de tarefas e foco nas entregas críticas.
 
 ---
 
@@ -36,4 +31,4 @@ Esta seção visa acompanhar a evolução temporal do projeto, avaliando a ader�
 
 | Versão | Data | Descrição | Autor(a) |
 |--------|------|----------|-------------------------------|
-| 1.0    | 06/07/2025 |Criação da metodologia| [João Lobo](https://github.com/joaolobo10)|
+| 1.0    | 06/07/2025 |Criação do calendario e progresso | [João Lobo](https://github.com/joaolobo10)|

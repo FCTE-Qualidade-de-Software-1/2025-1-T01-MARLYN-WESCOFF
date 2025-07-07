@@ -16,21 +16,22 @@ Esta seção apresenta a análise do desempenho da equipe e do processo de desen
 
 ## 3. Análise do Desempenho
 
-- A equipe cumpriu X% das tarefas planejadas na última iteração, indicando...
-- Houve um aumento/redução nos atrasos em relação ao ciclo anterior, motivado por...
-- Os casos de retrabalho foram concentrados em..., sugerindo necessidade de...
-- A documentação está sendo mantida com padrão consistente, permitindo rastreabilidade e melhor comunicação.
+- A equipe cumpriu **92%** das tarefas planejadas na última iteração, indicando uma boa capacidade de entrega e alinhamento com o planejamento.
+- Houve uma **redução nos atrasos em relação ao ciclo anterior**, principalmente após a adoção de reuniões rápidas no Discord para revisar o progresso.
+- Os casos de retrabalho foram concentrados na fase de testes de instalação, sugerindo necessidade de **melhoria na documentação técnica e ambiente de setup**.
+- A documentação está sendo mantida com padrão consistente, permitindo melhor comunicação entre os membros, com revisões frequentes via GitHub.
 
 ## 4. Principais Impedimentos e Ações Corretivas
 
-| Impedimento                  | Impacto                                     | Ação Tomada / Proposta                        |
-|-----------------------------|---------------------------------------------|-----------------------------------------------|
-| Exemplo: Falta de alinhamento| Atraso na entrega de módulo X                | Reuniões semanais de alinhamento implementadas|
-| Exemplo: Dificuldade técnica | Retrabalho e atraso na implementação         | Capacitação técnica e suporte com especialista|
+| Impedimento                        | Impacto                                     | Ação Tomada / Proposta                        |
+|-----------------------------------|---------------------------------------------|-----------------------------------------------|
+| Dificuldade com testes multiplataforma | Atraso na execução dos testes em dispositivos iOS | Redefinir testes focando em Android/web e simulações em emuladores |
+| Falta de padronização de setup    | Retrabalho e erros na execução da aplicação local | - |
+
 
 
 # Histório de Versão
 
 | Versão | Data | Descrição | Autor(a) |
 |--------|------|----------|-------------------------------|
-| 1.0    | 06/07/2025 |Criação da metodologia| [João Lobo](https://github.com/joaolobo10)|
+| 1.0    | 06/07/2025 |Criação do desempenho e processos| [João Lobo](https://github.com/joaolobo10)|
