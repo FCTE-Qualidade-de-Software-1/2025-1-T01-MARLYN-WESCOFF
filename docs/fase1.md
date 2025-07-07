@@ -20,7 +20,7 @@ A avaliação visa garantir a qualidade da aplicação sob a perspectiva do usu�
 
 ### Modelo de Qualidade do Produto (Baseado em ISO/IEC 25010 e Q-RAPID)
 
-Para selecionar e priorizar os aspectos de qualidade do **produto AgroMart**, este projeto se baseia nos princípios da norma **ISO/IEC 25010**. O framework **Q-RAPID** (Quality-Requirement-Analysis-and-Prioritization-in-agile-Development) operacionaliza essa norma, propondo um processo para coletar dados de ferramentas de desenvolvimento (como GitLab, Jira, SonarQube) e transformá-los em indicadores de qualidade.
+Além da ISO/IEC 25010, o projeto também adota o framework **PSM/CID (Practical Software and Systems Measurement / Continuous Iterative Development)** para apoiar a avaliação e o monitoramento contínuo do processo de desenvolvimento. O PSM/CID fornece métricas e práticas que complementam a análise de qualidade do produto, permitindo uma abordagem integrada entre qualidade do software e eficiência do processo.
 
 Seguindo essa abordagem, as características de qualidade do AgroMart foram classificadas em uma escala de 1 (nenhum interesse) a 5 (grande interesse):
 
