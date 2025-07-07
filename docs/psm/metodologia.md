@@ -40,18 +40,14 @@ A integração das métricas ao contexto do projeto **AgroMart** permitiu:
 
 ### Tabela de Contribuição
 
-<center>
-
 | Nome                                      | Matrícula   | Contribuição |
 |-------------------------------------------|-------------|--------------|
-| [João Lobo](https://github.com/joaolobo10)             | 231012245   | 16,67%       |
-| [Brenno Silva](https://github.com/Brenno-Silva01)      | 190085045   | 16,67%       |
-| [Caio Sabino](https://github.com/caiomsabino)          | 231026302   | 16,67%       |
-| [Igor Thiago](https://github.com/Igor-Thiago)          | 190029692   | 16,67%       |
-| [João Sapiencia](https://github.com/JoaoSapiencia)     | 231026400   | 16,67%       |
-| [Rodrigo Gontijo](https://github.com/rodrigogontijoo)  | 190116498   | 16,67%       |
-
-</center>
+| [João Lobo](https://github.com/joaolobo10)            | 231012245   | 16,67%       |
+| [Brenno Silva](https://github.com/Brenno-Silva01)     | 190085045   | 16,67%       |
+| [Caio Sabino](https://github.com/caiomsabino)         | 231026302   | 16,67%       |
+| [Igor Thiago](https://github.com/Igor-Thiago)         | 190029692   | 16,67%       |
+| [João Sapiencia](https://github.com/JoaoSapiencia)    | 231026400   | 16,67%       |
+| [Rodrigo Gontijo](https://github.com/rodrigogontijoo) | 190116498   | 16,67%       |
 
 # Histório de Versão
 
