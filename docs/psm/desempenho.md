@@ -6,32 +6,43 @@ Esta seção apresenta a análise do desempenho da equipe e do processo de desen
 
 ## 2. Métricas Monitoradas
 
-| Métrica                         | Descrição                                    | Meta / Referência                |
-|--------------------------------|----------------------------------------------|---------------------------------|
-| Tarefas planejadas por período  | Quantidade de tarefas definidas para o ciclo | Exemplo: 20 tarefas por sprint  |
-| Tarefas concluídas              | Quantidade de tarefas finalizadas no período  | Meta: 90% de conclusão          |
-| Percentual de atrasos           | % de tarefas entregues fora do prazo          | Ideal: < 10%                    |
-| Retrabalho registrado           | Número de tarefas reabertas para correção     | Meta: mínimo possível           |
-| Qualidade da documentação       | Avaliação qualitativa da clareza e completude | Revisão por pares               |
+| Métrica                       | Método de Medição                                     | Meta / Limite             |
+|------------------------------|--------------------------------------------------------|----------------------------|
+| Taxa de Conclusão de Tarefas | Tarefas concluídas ÷ tarefas planejadas               | ≥ 90%                      |
+| Tarefas com Retrabalho       | Nº de issues reabertas ou reeditadas                 | ≤ 5%                       |
+| Conformidade com Instruções  | Verificação contra escopo da disciplina              | 100%                       |
+| Percentual de atrasos 	   | % de tarefas entregues fora do prazo 	              | < 10%                       |
+| Revisão por Pares            | Nº de documentos revisados por outro membro          | 1 revisão por entrega      |
+| Frequência de Comunicação    | Nº de reuniões semanais realizadas                   | ≥ 1 por semana             |
 
-## 3. Análise do Desempenho
+## 3. Desempenho por Fase
 
-- A equipe cumpriu **92%** das tarefas planejadas na última iteração, indicando uma boa capacidade de entrega e alinhamento com o planejamento.
-- Houve uma **redução nos atrasos em relação ao ciclo anterior**, principalmente após a adoção de reuniões rápidas no Discord para revisar o progresso.
-- Os casos de retrabalho foram concentrados na fase de testes de instalação, sugerindo necessidade de **melhoria na documentação técnica e ambiente de setup**.
+| Fase                      | Tarefas Previstas | Tarefas Concluídas | % Conclusão | Retrabalho | Status         |
+|--------------------------|-------------------|---------------------|--------------|------------|----------------|
+| Fase 1: Requisitos da Avaliação   | 6                 | 6                   | 100%         | 1          |  OK          |
+| Fase 2: Especificar Avaliação    | 5                 | 5                   | 100%         | 1          |  OK           |
+| Fase 3: Projetar Avaliação       | 6                 | 5                   | 83%          | 1          |  Em atenção   |
+| Fase 4: Executar Avaliação       | 8                 | 6                   | 75%          | 2          |  Em andamento |
+
+### 3.1 Observações
+
+- Houve uma redução nos atrasos em relação ao ciclo anterior, principalmente após a adoção de reuniões rápidas no Discord para revisar o progresso.
+- Os casos de retrabalho foram concentrados na fase de testes de instalação, sugerindo necessidade de melhoria na documentação técnica e ambiente de setup.
 - A documentação está sendo mantida com padrão consistente, permitindo melhor comunicação entre os membros, com revisões frequentes via GitHub.
 
-## 4. Principais Impedimentos e Ações Corretivas
+## 4. Análise e Ações Corretivas
 
-| Impedimento                        | Impacto                                     | Ação Tomada / Proposta                        |
-|-----------------------------------|---------------------------------------------|-----------------------------------------------|
-| Dificuldade com testes multiplataforma | Atraso na execução dos testes em dispositivos iOS | Redefinir testes focando em Android/web e simulações em emuladores |
-| Falta de padronização de setup    | Retrabalho e erros na execução da aplicação local | - |
+| Problema Identificado            | Causa Principal                            | Ação Tomada                                     |
+|----------------------------------|---------------------------------------------|------------------------------------------------|
+| Retrabalho em testes             | Setup inconsistente entre ambientes         | ---     |
+| Tarefa mal definida              | Escopo e critérios pouco claros             | Consulta a documentos disponibilizados pela professora                     |
+| Baixa adesão a revisões técnicas| Falta de rotina formal                      | Agendamento de revisões semanais via Discord   |
 
+---
 
+## Histórico de Versão
 
-# Histório de Versão
-
-| Versão | Data | Descrição | Autor(a) |
-|--------|------|----------|-------------------------------|
-| 1.0    | 06/07/2025 |Criação do desempenho e processos| [João Lobo](https://github.com/joaolobo10)|
+| Versão | Data       | Descrição                             | Autor(a) |
+|--------|------------|----------------------------------------|----------|
+| 1.1    | 06/07/2025 | Criação inicial da pagina desempenho e processos   | João Lobo |
+| 1.2    | 08/07/2025 | Revisão e melhorias em cada tópico    | Brenno da Silva |
