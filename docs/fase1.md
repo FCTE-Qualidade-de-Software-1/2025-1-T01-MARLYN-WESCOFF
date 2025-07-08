@@ -74,3 +74,18 @@ O framework CID oferece um conjunto de métricas práticas para avaliar o progre
 - **Empresa:** Analisa o alinhamento com os objetivos estratégicos.
 
 Para o nosso projeto, isso significa que, além de avaliar a qualidade do AgroMart (o produto), devemos usar as métricas do framework CID (como *Burndown*, *Cycle Time* e *Team Velocity*) para monitorar o nosso próprio trabalho (o processo).
+
+## Bibliografia
+> \- ISO/IEC 25000 SQuaRE series Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE). Disponível em: <https://committee.iso.org/sites/jtc1sc7/home/projects/flagship-standards/iso-25000-square-series.html>. Acesso em: 22 de maio de 2025. 
+ 
+> \- ISO/IEC 25010. Disponível em: <https://iso25000.com/index.php/en/iso-25000-standards/iso-25010>. Acesso em: 19 de maio de 2025.
+
+> \- Documentação do AgroMart. Disponível em: <https://agromart.github.io/docs/docs/intro>. Acesso em: 29 de maio de 2025.
+
+## Referências Bibliográficas
+
+> [1] AgroMart. Disponível em: <https://github.com/AgroMart>. Acesso em: 19 de maio de 2025.
+
+> [2] ISO/IEC 25010. Disponível em: <https://iso25000.com/index.php/en/iso-25000-standards/iso-25010>. Acesso em: 19 de maio de 2025.
+
+> [3] ONU. Objetivos de Desenvolvimento Sustentável. Disponível em: <https://brasil.un.org/pt-br/sdgs>. Acesso em: 19 de maio de 2025.

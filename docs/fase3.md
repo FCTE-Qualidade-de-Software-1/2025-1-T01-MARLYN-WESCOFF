@@ -1,70 +1,89 @@
-# Fase 3: Projeto da Avaliação
+# Fase 3: Planejamento de avaliação
 
-Nesta fase, é criado o plano de avaliação detalhado, que servirá como um guia para a execução dos testes e a coleta de dados. O plano define os procedimentos, recursos, responsabilidades e o cronograma das atividades.
+### **1. Introdução**
 
-## 1. Introdução e Objetivos
-O objetivo deste plano é projetar as atividades necessárias para avaliar a qualidade do software AgroMart, com foco principal na característica de **Portabilidade**. A avaliação seguirá as métricas especificadas na Fase 2 para garantir a coleta de dados objetivos e consistentes.
+Este Plano de Avaliação descreve a abordagem e a metodologia para uma análise criteriosa da qualidade do sistema AgroMart. O documento serve como um roteiro para guiar o processo de análise, assegurando que os aspectos críticos da aplicação, como acessibilidade e portabilidade, sejam avaliados de forma sistemática e estruturada. O objetivo é identificar pontos fortes e áreas de melhoria com base em evidências, utilizando métricas, critérios e níveis de pontuação previamente definidos.
 
-## 2. Escopo da Avaliação
-- **Produto:** Software AgroMart (Interface Web e Aplicativo Móvel).
-- **Características Avaliadas:** O foco principal será em Portabilidade e suas características de apoio como Usabilidade e Confiabilidade em diferentes plataformas.
+### **2. Objetivo da Avaliação**
 
-## 3. Plano de Coleta de Métricas do Produto (AgroMart)
+Conforme os artefatos de medição, o objetivo desta avaliação é duplo:
 
-A coleta de dados será realizada seguindo os procedimentos abaixo para cada métrica definida no GQM da Fase 2.
+* **Analisar** o AgroMart com o propósito de **avaliar se a aplicação é acessível para usuários com necessidades específicas**.
+* **Analisar** o AgroMart com o propósito de **avaliar o comportamento do aplicativo em diferentes ambientes** para melhorar a experiência do usuário.
 
-| Métrica | Procedimento de Coleta |
-| :--- | :--- |
-| **M1: Taxa de sucesso em tarefas** | Realizar um teste de usabilidade com um grupo de 3-5 usuários. Eles executarão um roteiro de tarefas pré-definido (ex: buscar produto, cadastrar loja) no desktop e no mobile. A taxa será calculada como (tarefas concluídas / total de tarefas) * 100. |
-| **M2: Índice de responsividade** | Utilizar as ferramentas de desenvolvedor dos navegadores para simular diferentes resoluções de tela. O índice será "Passa" se não houver problemas visuais significativos e "Falha" caso contrário. |
-| **M3: Número de erros visuais** | Realizar inspeção visual das principais telas da aplicação em múltiplos navegadores (Chrome, Firefox, Safari, Edge) e contabilizar cada desalinhamento ou elemento quebrado. |
-| **M4: % de conformidade visual**| Calcular a conformidade com base nos erros de M3. |
-| **M5: Tempo de resposta médio** | Utilizar a aba "Network" das ferramentas de desenvolvedor para medir o tempo de carregamento das 5 principais páginas em desktop e em uma conexão 4G simulada. |
-| **M6: Taxa de erro/performance por SO**| Executar testes funcionais em diferentes SOs/Dispositivos e calcular a taxa de falha. |
-| **M7: Nº de funcionalidades não disponíveis** | Comparar funcionalmente a interface web com o aplicativo móvel e listar as diferenças. |
-| **M8 a M11 (Instalação)**| Simular o processo de instalação em um ambiente limpo, seguindo a documentação, para medir a quantidade de dependências, passos manuais, tempo e erros. |
+A avaliação será conduzida sob o ponto de vista da **equipe de desenvolvimento**.
 
----
+### **3. Escopo da Avaliação**
 
-## 4. Plano de Gerenciamento do Projeto (Framework PSM/CID)
+A avaliação abrangerá as seguintes áreas do sistema AgroMart:
 
-Para gerenciar o **nosso próprio projeto de avaliação**, aplicaremos métricas do framework **CID (Continuous Iterative Development)**. O objetivo é monitorar nosso progresso, eficiência e garantir a entrega de um trabalho de qualidade.
+* **Usabilidade e Acessibilidade:** Foco na legibilidade, navegação, contraste de cores, alternativas textuais e suporte a tecnologias assistivas.
+* **Portabilidade:** Responsividade da interface em diferentes dispositivos (desktop e mobile) e consistência visual entre navegadores.
 
-### Métricas de Gerenciamento a Serem Adotadas:
+### **4. Método de Avaliação**
 
-- **Committed vs. Completed (Comprometido vs. Concluído):**
-  - **O que é:** Mede se a equipe está entregando o que planejou.
-  - **Como usaremos:** As quatro fases do trabalho são nossos "work items" comprometidos. Vamos rastrear a data de conclusão de cada fase em relação a um cronograma planejado. Isso nos dará uma medida da nossa previsibilidade.
+A avaliação será realizada pela própria equipe de desenvolvimento por meio de testes internos de usabilidade, acessibilidade e portabilidade, simulando cenários reais de uso. A metodologia combina os seguintes pontos:
 
-- **Burndown:**
-  - **O que é:** Um gráfico que visualiza o trabalho restante versus o tempo.
-  - **Como usaremos:** Utilizaremos as *Issues* e *Milestones* do GitHub para criar um backlog de tarefas para cada fase. O fechamento das issues alimentará um gráfico de burndown, mostrando visualmente se estamos no caminho certo para concluir o projeto no prazo.
+* **Testes de Tarefas:** Os membros da equipe executarão tarefas comuns (ex: navegar entre telas) para medir a eficácia e eficiência.
+* **Análise Observacional:** Durante os testes, serão coletados dados quantitativos (tempo para concluir tarefas, erros) e qualitativos (comentários, dificuldades encontradas).
+* **Testes de Acessibilidade:** Serão utilizadas ferramentas de acessibilidade para verificar a navegabilidade e a compreensão da interface por meio de leitores de tela, focando em alternativas textuais e feedback não visual.
+* **Testes de Portabilidade:** A aplicação será testada em diferentes dispositivos (computador pessoal e celular) e em, no mínimo, dois navegadores distintos (ex: Chrome, Firefox) para verificar a consistência do layout e a responsividade.
 
-- **Cycle Time (Tempo de Ciclo):**
-  - **O que é:** O tempo decorrido desde o início de um trabalho até a sua conclusão.
-  - **Como usaremos:** Mediremos especificamente o *Cycle Time* da **"ação de melhoria"** obrigatória da Fase 4. O tempo será contado desde o primeiro *commit* de código ou a criação do protótipo até a sua finalização e entrega.
+### **5. Métricas a Serem Avaliadas**
 
-- **Defect Detection & Resolution (Detecção e Resolução de Defeitos):**
-  - **O que é:** Mede a capacidade da equipe de encontrar e corrigir seus próprios erros.
-  - **Como usaremos:** Qualquer problema ou erro significativo encontrado em nossa própria documentação, planejamento ou código (da ação de melhoria) será registrado como uma *Issue* no GitHub. Mediremos quantos desses "defeitos" são encontrados e o tempo para resolvê-los. O objetivo é ter um processo de auto-correção eficiente.
+Com base na abordagem GQM dos documentos de objetivo, as seguintes métricas serão avaliadas:
 
-### Recursos e Cronograma
+**Usabilidade (Foco em Acessibilidade):**
 
-**Recursos Necessários:**
+- **M1:** Taxa de Sucesso da Tarefa utilizando ferramentas de acessibilidade
+- **M2:** Índice de Conformidade de Feedback Não-Dependente de Cor
+- **M3:** Índice de Conformidade de Contraste 
+- **M4:** Cobertura de Alternativas Textuais em Imagens Informativas
+- **M5:** Índice de Conformidade de Feedback de Interação (Estado Ativo)
+- **M6:** Cobertura de navegação por teclado
+- **M7:** Análise do código
 
-  - **Humanos:** Membros da equipe do projeto.
-  - **Software:** Navegadores, Ferramentas de Desenvolvedor, Git, GitHub.
-  - **Hardware:** Computadores com Windows/Linux, dispositivos móveis Android/iOS.
+**Portabilidade:**
 
-**Cronograma e Responsabilidades:**
-A tabela a seguir apresenta a divisão de trabalho e deve ser preenchida pela equipe com os prazos.
+* **M4:** Índice de responsividade, avaliando a adaptação da interface em dispositivos mobile e desktop.
+* **M5:** Número de erros visuais encontrados por navegador.
+- **M3:** Número de funcionalidades por plataforma 
+- **M4:** Número de funções que funcionam sem internet 
 
-| Atividade | Responsável(is) | Prazo de Início | Prazo de Fim |
-| :--- | :--- | :--- | :--- |
-| Preparação do Ambiente de Teste | Brenno, Igor | | |
-| Execução dos Testes de Usabilidade (M1) | Caio, João S. | | |
-| Execução dos Testes de Compatibilidade (M2-M7)| João L., Rodrigo | | |
-| Execução dos Testes de Instalação (M8-M11)| Caio, Rodrigo | | |
-| Análise e Consolidação dos Dados | Todos | | |
-| Elaboração do Relatório Final | Todos | | |
-| Implementação da Ação de Melhoria | A definir | | |
+### **6. Recursos Necessários**
+
+* **Materiais de Apoio:**
+    * Documentos de Objetivos do projeto para guiar a aplicação das métricas.
+    * Documentação do Agromart.
+    * WCAG 2.2.
+    * ABNT NBR 17225.
+* **Ferramentas Técnicas:**
+    * Dispositivos de teste: computador pessoal e celular.
+    * Navegadores distintos (ex: Google Chrome, Mozilla Firefox).
+    * Cronômetro digital para medição de tempo das tarefas.
+    * Ferramenta de verificação de acessibilidade, como o **TalkBack (Android)**.
+    * Ferramenta de captura de tela para documentar evidências.
+
+### **7. Critérios de Julgamento**
+
+Os resultados serão interpretados com base nos critérios de avaliação:
+
+* **Usabilidade/Acessibilidade:**
+    * **Conforme / Aceitável:** Todas as métricas de acessibilidade (M1, M2, M3) devem atingir uma pontuação "Bom" ou "Excelente".
+    * **Não Conforme / Inaceitável:** Se pelo menos uma métrica de acessibilidade receber a pontuação "Insatisfatório", indicando uma falha crítica que impede o uso por um grupo de usuários.
+* **Portabilidade:**
+    * **Aceitável:** 70% ou mais das métricas de portabilidade (M4, M5) classificadas como "Bom" ou "Excelente".
+    * **Inaceitável:** Menos de 50% das métricas de portabilidade atingindo o nível "Bom" ou "Excelente".
+
+
+## Referências Bibliográficas
+
+> WCAG 2.2 Understanding Docs. SC 1.4.1 Use of Color (Level A). Disponível em: <https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html>. Acesso em 7 de julho de 2025.
+
+> ABNT NBR 17225:2025, Acessibilidade em conteúdo e aplicações web – Requisitos. Disponível em: <https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf>. Acesso em 7 de julho de 2025.
+
+### Histórico de Versão
+
+| Versão | Data       | Descrição                                                                              | Autor               |
+| :----- | :--------- | :------------------------------------------------------------------------------------- | :------------------ |
+| 1.0    | 07/07/2025 | Criação do documento de planejamento de avaliação com base nos objetivos de Usabilidade e Portabilidade. | Caio Sabino |

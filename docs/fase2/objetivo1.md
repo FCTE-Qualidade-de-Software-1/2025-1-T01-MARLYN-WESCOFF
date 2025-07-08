@@ -56,6 +56,7 @@ A tabela abaixo mostra a escala adotada:
 | **Bom (7-9)** | **Próximo da meta.** Causa um impacto mínimo, mas a funcionalidade principal é mantida. | Resultado: Entre 90% e 97%. |
 | **Regular (4-6)** | **Abaixo da meta.** Apresenta falhas perceptíveis que podem dificultar o uso para alguns. | Resultado: Entre 70% e 89%. |
 | **Insatisfatório (1-3)**| **Falha Crítica.** Impede o acesso ou a conclusão de uma tarefa para um grupo de usuários. | Resultado: < 70%. |
+
 ## Critérios de Avaliação
 
 Com os níveis de pontuação definidos, a equipe criou critérios simples para julgar o desempenho da plataforma em dois aspectos principais: usabilidade e confiabilidade. Esses critérios são baseados na média de desempenho das métricas avaliadas.
@@ -69,3 +70,11 @@ Avalia se o sistema é acessível e fácil de usar, entender e navegar.
 | **Conforme / Aceitável** | **Todas** as métricas de acessibilidade devem ter pontuação "Bom" ou "Excelente". | O sistema atende aos padrões de acessibilidade e usabilidade. Pode ter pequenas falhas, mas não há barreiras de acesso. |
 | **Parcialmente Conforme / Aceitável com ressalvas** | **Nenhuma** métrica crítica com pontuação "Insatisfatório", mas uma ou mais métricas com pontuação "Regular". | O sistema é funcional para a maioria, mas apresenta barreiras de dificuldade média que precisam ser corrigidas com prioridade. |
 | **Não Conforme / Inaceitável** | **Pelo menos uma** métrica com pontuação "Insatisfatório". | O sistema possui **pelo menos uma falha crítica** que impede o acesso ou o uso por um grupo de usuários. **Inaceitável para lançamento.** |
+
+## Referências Bibliográficas
+
+> WCAG 2.2 Understanding Docs. SC 1.4.1 Use of Color (Level A). Disponível em: <https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html>. Acesso em 7 de julho de 2025.
+
+## Bibliografia 
+
+> [2] ISO/IEC 25010. Disponível em: <https://iso25000.com/index.php/en/iso-25000-standards/iso-25010>. Acesso em: 19 de maio de 2025.
