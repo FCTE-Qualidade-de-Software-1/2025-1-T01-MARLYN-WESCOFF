@@ -41,8 +41,6 @@ Com base na abordagem Goal-Question-Metric (GQM), selecionamos as seguintes mét
 - **M3: Índice de Conformidade de Contraste (WCAG)**
 - **M4: Cobertura de Alternativas Textuais em Imagens Informativas**
 - **M5: Índice de Conformidade de Feedback de Interação (Estado Ativo)**
-- **M6: Cobertura de navegação por teclado**
-- **M7: Análise do código**
 
 ## Níveis de Pontuação das Métricas
 
