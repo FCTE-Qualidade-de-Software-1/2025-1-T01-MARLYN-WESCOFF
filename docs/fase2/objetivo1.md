@@ -48,21 +48,22 @@ Para cada métrica definida com a metodologia GQM, foram criados níveis de pont
 
 A tabela abaixo mostra a escala adotada:
 
-| **Desempenho da Métrica** | **Faixa de Valores** | **Interpretação Qualitativa**                                                   |
-| ------------------------- | -------------------- | ------------------------------------------------------------------------------- |
-| **Excelente**             | 10                   | Atende completamente aos padrões de qualidade esperados.                                 |
-| **Bom**                   | 7 - 9                | Funciona bem, com poucos pontos que podem ser melhorados.           |
-| **Regular**               | 4 - 6                | 	Tem falhas visíveis, mas ainda pode ser usado de forma aceitável. |
-| **Insatisfatório**        | 1 - 3                | Prejudica bastante a experiência ou confiança do usuário.          |
-
+| **Desempenho da Métrica** | **Interpretação** | **Exemplo (Métrica de Contraste com meta de 98%)** |
+| :--- | :--- | :--- |
+| **Excelente (10)** | **Atinge ou supera a meta da hipótese.** Não há impacto negativo para o usuário. | Resultado: ≥ 98% de conformidade. |
+| **Bom (7-9)** | **Próximo da meta.** Causa um impacto mínimo, mas a funcionalidade principal é mantida. | Resultado: Entre 90% e 97%. |
+| **Regular (4-6)** | **Abaixo da meta.** Apresenta falhas perceptíveis que podem dificultar o uso para alguns. | Resultado: Entre 70% e 89%. |
+| **Insatisfatório (1-3)**| **Falha Crítica.** Impede o acesso ou a conclusão de uma tarefa para um grupo de usuários. | Resultado: < 70%. |
 ## Critérios de Avaliação
 
 Com os níveis de pontuação definidos, a equipe criou critérios simples para julgar o desempenho da plataforma em dois aspectos principais: usabilidade e confiabilidade. Esses critérios são baseados na média de desempenho das métricas avaliadas.
 
 ### Usabilidade
 
-Avalia se o sistema é fácil de usar, entender e navegar.
+Avalia se o sistema é acessível e fácil de usar, entender e navegar.
 
-- Aceitável: ≥ 70% das métricas classificadas como "Bom" ou "Excelente".
-- Parcialmente aceitável: Entre 50% e 69% das métricas com nível "Bom" ou superior.
-- Inaceitável: < 50% das métricas atingindo "Bom" ou "Excelente".
+| Nível de Conformidade | Condição para Atingir o Nível | Interpretação |
+| :--- | :--- | :--- |
+| **Conforme / Aceitável** | **Todas** as métricas de acessibilidade devem ter pontuação "Bom" ou "Excelente". | O sistema atende aos padrões de acessibilidade e usabilidade. Pode ter pequenas falhas, mas não há barreiras de acesso. |
+| **Parcialmente Conforme / Aceitável com ressalvas** | **Nenhuma** métrica crítica com pontuação "Insatisfatório", mas uma ou mais métricas com pontuação "Regular". | O sistema é funcional para a maioria, mas apresenta barreiras de dificuldade média que precisam ser corrigidas com prioridade. |
+| **Não Conforme / Inaceitável** | **Pelo menos uma** métrica com pontuação "Insatisfatório". | O sistema possui **pelo menos uma falha crítica** que impede o acesso ou o uso por um grupo de usuários. **Inaceitável para lançamento.** |
