@@ -28,7 +28,12 @@
 
 <font size="2"><p style="text-align: center">**Figura 1 -** Diagrama de Questões e Métricas para Portabilidade.</p></font>
 
-![Diagrama1](../assets/Diagrama-1.jpg)
+![Diagrama1](../assets/Diagrama-1.png)
+
+<font size="2"><p style="text-align: center">[João Lobo](https://github.com/joaolobo10), 2025</p></font>
+
+<font size="2"><p>Clique nesse [link](https://drive.google.com/drive/folders/1GAmEliqammlkFNnF2ME-MrxfUyPv9Ify?usp=sharing) para a melhor visualização</p></font>
+
 
 ## Seleção das Métricas
 
@@ -43,6 +48,9 @@ Com base na abordagem Goal-Question-Metric (GQM), selecionamos as seguintes mét
 - **M5:**Tempo de resposta médio por plataforma
 - **M6:**Taxa de erro/perfomance por dispositivo ou SO
 - **M7:**Número de funcionalidades por plataforma 
+- **M8:**Quantidade de bibliotecas exclusivas de uma plataforma 
+- **M9:**Número de funções que funcionam sem internet 
+- **M10:**Tempo de carregamento em rede fraca 
 
 ## Níveis de Pontuação das Métricas
 
