@@ -56,5 +56,5 @@ Essa seção visa acompanhar a linha temporal do projeto, avaliando o cumpriment
 
 | Versão | Data       | Descrição                             | Autor(a) |
 |--------|------------|----------------------------------------|----------|
-| 1.1    | 08/07/2025 | Reformulação com base no PSM/CID       | João Lobo |
+| 1.1    | 06/07/2025 | Criação inicial da pagina calendario e progresso     | João Lobo |
 | 1.2    | 08/07/2025 | Revisão e melhorias em cada tópico    | Brenno da Silva |

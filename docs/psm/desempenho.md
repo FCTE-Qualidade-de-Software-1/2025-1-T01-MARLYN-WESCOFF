@@ -44,5 +44,5 @@ Esta seção apresenta a análise do desempenho da equipe e do processo de desen
 
 | Versão | Data       | Descrição                             | Autor(a) |
 |--------|------------|----------------------------------------|----------|
-| 1.1    | 08/07/2025 | Revisão completa baseada no PSM/CID    | João Lobo |
+| 1.1    | 06/07/2025 | Criação inicial da pagina desempenho e processos   | João Lobo |
 | 1.2    | 08/07/2025 | Revisão e melhorias em cada tópico    | Brenno da Silva |

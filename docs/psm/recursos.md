@@ -64,5 +64,5 @@ Esta seção tem como objetivo Gerenciar e monitorar os recursos humanos e técn
 
 | Versão | Data       | Descrição                               | Autor(a) |
 |--------|------------|------------------------------------------|----------|
-| 1.1    | 08/07/2025 | Inserção de simulação de custo e ajustes | João Lobo |
+| 1.1    | 06/07/2025 | Criação inicial da pagina recursos e custos | João Lobo |
 | 1.2    | 08/07/2025 | Revisão e melhorias em cada tópico    | Brenno da Silva |
