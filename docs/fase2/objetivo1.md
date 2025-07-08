@@ -13,7 +13,7 @@
 
 **Perguntas (Questions):**
 
-> Q1: O design foi pensado para ser utilizável por todas as pessoas, independentemente de suas limitações físicas, sensoriais ou cognitivas <br> **Hipótese 1:**Espera-se que a taxa de sucesso na conclusão de tarefas essenciais por usuários com deficiências (visuais, motoras, etc.) seja de, no mínimo, 85%.
+> Q1: O design foi pensado para ser utilizável por todas as pessoas, independentemente de suas limitações físicas, sensoriais ou cognitivas? <br> **Hipótese 1:**Espera-se que a taxa de sucesso na conclusão de tarefas essenciais por usuários com deficiências (visuais, motoras, etc.) seja de, no mínimo, 85%.
 
 > Q2: Informações importantes não dependem apenas de cor? <br> **Hipótese 2:** Espera-se que 100% dos elementos de feedback (como mensagens de erro/sucesso) utilizem, além da cor, um ícone ou texto explícito para comunicar seu status.
 
@@ -28,7 +28,7 @@
 
 <font size="2"><p style="text-align: center">**Figura 1 -** Diagrama de Questões e Métricas para Usabilidade.</p></font>
 
-![Diagrama1](../assets/Diagrama-1.jpg)
+![Diagrama1](../assets/diagramaobj1.png)
 
 ## Seleção das Métricas
 
@@ -36,7 +36,7 @@ Com base na abordagem Goal-Question-Metric (GQM), selecionamos as seguintes mét
 
 #### Usabilidade
 
-- **M1: Taxa de Sucesso da Tarefa para Usuários com Deficiências**
+- **M1: Taxa de Sucesso da Tarefa utilizando ferramentas de acessibilidade**
 - **M2: Índice de Conformidade de Feedback Não-Dependente de Cor**
 - **M3: Índice de Conformidade de Contraste (WCAG)**
 - **M4: Cobertura de Alternativas Textuais em Imagens Informativas**
