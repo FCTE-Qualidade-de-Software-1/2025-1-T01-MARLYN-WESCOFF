@@ -20,9 +20,7 @@
 
 > **Q3:** Existem limitações de desempenho ou funcionalidades quando o software roda em diferentes plataformas? <br> **Hipótese 3:** Espera-se que menos de 10% dos testes apresentem perda significativa de desempenho ou falhas de funcionalidade entre plataformas.
 
-> **Q4:** A aplicação depende de recursos ou bibliotecas específicas de uma única plataforma? <br> **Hipótese 4:** Espera-se que a solução utilize majoritariamente tecnologias multiplataforma.
-
-> **Q5:** A aplicação funciona de forma adequada mesmo em ambientes com baixa ou nenhuma conectividade? <br> **Hipótese 5:** Espera-se que as funcionalidades essenciais estejam disponíveis mesmo em modo offline ou com conexão instável.
+> **Q4:** A aplicação funciona de forma adequada mesmo em ambientes com baixa ou nenhuma conectividade? <br> **Hipótese 4:** Espera-se que as funcionalidades essenciais estejam disponíveis mesmo em modo offline ou com conexão instável.
 
 ## Relação entre Objetivos de Medição - Questões e Métricas - Objetivo de Medição 2: Portabilidade
 
@@ -41,16 +39,11 @@ Com base na abordagem Goal-Question-Metric (GQM), selecionamos as seguintes mét
 
 #### Confiabilidade
 
-- **M1:** Taxa de sucesso em tarefas nos dispositivos
-- **M2:** índice de responsividade
-- **M3:**Número de erros visuais encontrados por navegador
-- **M4:**Porcentagem de conformidade visual
-- **M5:**Tempo de resposta médio por plataforma
-- **M6:**Taxa de erro/perfomance por dispositivo ou SO
-- **M7:**Número de funcionalidades por plataforma 
-- **M8:**Quantidade de bibliotecas exclusivas de uma plataforma 
-- **M9:**Número de funções que funcionam sem internet 
-- **M10:**Tempo de carregamento em rede fraca 
+- **M1:** índice de responsividade
+- **M2:**Número de erros visuais encontrados por navegador
+- **M3:**Número de funcionalidades por plataforma 
+- **M4:**Número de funções que funcionam sem internet 
+
 
 ## Níveis de Pontuação das Métricas
 
