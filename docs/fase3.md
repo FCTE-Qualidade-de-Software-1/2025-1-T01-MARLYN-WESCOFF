@@ -45,10 +45,10 @@ Com base na abordagem GQM dos documentos de objetivo, as seguintes métricas ser
 
 **Portabilidade:**
 
-* **M4:** Índice de responsividade, avaliando a adaptação da interface em dispositivos mobile e desktop.
-* **M5:** Número de erros visuais encontrados por navegador.
-- **M3:** Número de funcionalidades por plataforma 
-- **M4:** Número de funções que funcionam sem internet 
+* **M1:** Índice de responsividade, avaliando a adaptação da interface em dispositivos mobile e desktop.
+* **M2:** Número de erros visuais encontrados por navegador.
+- **M3:** Número de funções que funcionam sem internet
+- **M4:** Clareza e Completude da Documentação de Instalação
 
 ### **6. Recursos Necessários**
 
@@ -61,7 +61,7 @@ Com base na abordagem GQM dos documentos de objetivo, as seguintes métricas ser
     * Dispositivos de teste: computador pessoal e celular.
     * Navegadores distintos (ex: Google Chrome, Mozilla Firefox).
     * Cronômetro digital para medição de tempo das tarefas.
-    * Ferramenta de verificação de acessibilidade, como o **TalkBack (Android)**.
+    * Ferramenta de verificação de acessibilidade **TalkBack (Android)** e **Acessibility Scanner**.
     * Ferramenta de captura de tela para documentar evidências.
 
 ### **7. Critérios de Julgamento**
