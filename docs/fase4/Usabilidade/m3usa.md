@@ -49,10 +49,6 @@ O **Índice de Conformidade de Contraste** da aplicação é considerado **Insat
 
 **Recomendação:** É necessária uma revisão completa da paleta de cores do design system da aplicação. A equipe de design deve ajustar as cores primárias e secundárias para garantir que todo texto atenda à taxa de contraste mínima de `4.5:1` e que os componentes gráficos e de interface atinjam a taxa mínima de `3:1`, conforme exigido pelo WCAG.
 
-## Bibliografia
-
-> \- Documentação de histórias de usuário do AgroMart. Disponível em: <https://agromart.github.io/docs/docs/modelagem/historiaDeUsuario/co-agricultor>. Acesso em: 07 de julho de 2025.
-
 ## Referências Bibliográficas
 
 > [1] ISO/IEC. ISO/IEC 25010:2011 — Systems and software engineering – Systems and software Quality Requirements and Evaluation (SQuaRE) – System and software quality models. International Organization for Standardization, 2011.

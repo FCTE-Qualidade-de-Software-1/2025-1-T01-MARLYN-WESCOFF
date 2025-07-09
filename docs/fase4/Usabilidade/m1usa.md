@@ -53,10 +53,6 @@ A combinação de falhas críticas de navegação e componentes inacessíveis re
 
 **Recomendação:** A correção das barreiras bloqueadoras identificadas nas outras métricas (especialmente as de navegação por teclado e acessibilidade de componentes) é de **prioridade máxima**. Enquanto estes problemas não forem resolvidos, a aplicação não pode ser considerada funcionalmente eficaz para usuários com deficiências motoras ou visuais.
 
-## Bibliografia
-
-> \- Documentação de histórias de usuário do AgroMart. Disponível em: <https://agromart.github.io/docs/docs/modelagem/historiaDeUsuario/co-agricultor>. Acesso em: 07 de julho de 2025.
-
 ## Referências Bibliográficas
 
 > [1] ISO/IEC. ISO/IEC 25010:2011 — Systems and software engineering – Systems and software Quality Requirements and Evaluation (SQuaRE) – System and software quality models. International Organization for Standardization, 2011.

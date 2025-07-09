@@ -79,10 +79,6 @@ A análise do código revela que, embora os elementos básicos sejam reconhecido
 2.  Corrigir a estrutura de navegação para que todas as telas possuam nomes exclusivos.
 3.  Atualizar o código para remover o uso de propriedades depreciadas e seguir as práticas atuais do framework.
 
-## Bibliografia
-
-> \- Documentação de histórias de usuário do AgroMart. Disponível em: <https://agromart.github.io/docs/docs/modelagem/historiaDeUsuario/co-agricultor>. Acesso em: 07 de julho de 2025.
-
 ## Referências Bibliográficas
 
 > [1] ISO/IEC. ISO/IEC 25010:2011 — Systems and software engineering – Systems and software Quality Requirements and Evaluation (SQuaRE) – System and software quality models. International Organization for Standardization, 2011.

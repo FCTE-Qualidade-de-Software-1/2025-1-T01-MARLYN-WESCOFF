@@ -67,10 +67,6 @@ O **Índice de Cobertura de Alternativas Textuais** é considerado **Insatisfat�
 
 **Recomendação:** É necessária uma revisão completa de todos os componentes visuais e interativos da aplicação. Ícones e imagens informativas devem receber um rótulo acessível (`contentDescription` no Android) único e descritivo. Componentes complexos como o carrossel devem ser refatorados para serem totalmente compatíveis com leitores de tela.
 
-## Bibliografia
-
-> \- Documentação de histórias de usuário do AgroMart. Disponível em: <https://agromart.github.io/docs/docs/modelagem/historiaDeUsuario/co-agricultor>. Acesso em: 07 de julho de 2025.
-
 ## Referências Bibliográficas
 
 > [1] ISO/IEC. ISO/IEC 25010:2011 — Systems and software engineering – Systems and software Quality Requirements and Evaluation (SQuaRE) – System and software quality models. International Organization for Standardization, 2011.

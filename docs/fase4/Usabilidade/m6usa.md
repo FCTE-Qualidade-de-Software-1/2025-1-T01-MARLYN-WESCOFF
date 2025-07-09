@@ -65,10 +65,6 @@ O **Índice de Cobertura de Navegação por Teclado** é considerado **Insatisfa
 
 **Recomendação:** É necessária uma auditoria manual completa de teclado em todas as telas da aplicação para mapear cada falha na ordem de foco, na operabilidade dos componentes e para identificar "armadilhas". O componente de carrossel precisa ser refatorado ou substituído por uma alternativa acessível.
 
-## Bibliografia
-
-> \- Documentação de histórias de usuário do AgroMart. Disponível em: <https://agromart.github.io/docs/docs/modelagem/historiaDeUsuario/co-agricultor>. Acesso em: 07 de julho de 2025.
-
 ## Referências Bibliográficas
 
 > [1] ISO/IEC. ISO/IEC 25010:2011 — Systems and software engineering – Systems and software Quality Requirements and Evaluation (SQuaRE) – System and software quality models. International Organization for Standardization, 2011.
