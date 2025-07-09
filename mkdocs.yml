@@ -43,15 +43,15 @@ markdown_extensions:
 
 nav:
   - 'Início': index.md
-  - 'Fase 1: Requisitos da Avaliação': fase1.md
-  - 'Fase 2: Especificação da Avaliação': 
+  - 'Fase 1:': fase1.md
+  - 'Fase 2:': 
       - 'GQM': fase2/fase2.md
       - Objetivo 1: fase2/objetivo1.md
       - Objetivo 2: fase2/objetivo2.md 
       - 'Abstraction Sheets': fase2/abstraction.md
 
-  - 'Fase 3: Projeto da Avaliação': fase3.md
-  - 'Fase 4: Executar a Avaliação':
+  - 'Fase 3:': fase3.md
+  - 'Fase 4:':
     - 'Usabilidade':
         - M1: fase4/Usabilidade/m1usa.md
         - M2 : fase4/Usabilidade/m2usa.md
