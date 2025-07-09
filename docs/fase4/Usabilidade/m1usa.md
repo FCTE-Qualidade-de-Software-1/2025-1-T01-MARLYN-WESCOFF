@@ -55,6 +55,4 @@ A combinação de falhas críticas de navegação e componentes inacessíveis re
 
 ## Referências Bibliográficas
 
-> [1] ISO/IEC. ISO/IEC 25010:2011 — Systems and software engineering – Systems and software Quality Requirements and Evaluation (SQuaRE) – System and software quality models. International Organization for Standardization, 2011.
-
-> [2] NIELSEN, Jakob. Mobile Usability. Berkeley: New Riders Pub, 2012.
+> [NBR] ABNT NBR 17225:2025, Acessibilidade em conteúdo e aplicações web – Requisitos. Disponível em: [https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf](https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf)
