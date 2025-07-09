@@ -53,18 +53,18 @@ nav:
   - 'Fase 3: Projeto da Avaliação': fase3.md
   - 'Fase 4: Executar a Avaliação':
     - 'Usabilidade':
-        -'M1': fase4/Usabilidade/m1usa.md
-        -'M2': fase4/Usabilidade/m2usa.md
-        -'M3': fase4/Usabilidade/m3usa.md
-        -'M4': fase4/Usabilidade/m4usa.md
-        -'M5': fase4/Usabilidade/m5usa.md
-        -'M6': fase4/Usabilidade/m6usa.md
-        -'M7': fase4/Usabilidade/m7usa.md
+        - M1: fase4/Usabilidade/m1usa.md
+        - M2 : fase4/Usabilidade/m2usa.md
+        - M3: fase4/Usabilidade/m3usa.md
+        - M4: fase4/Usabilidade/m4usa.md
+        - M5: fase4/Usabilidade/m5usa.md
+        - M6: fase4/Usabilidade/m6usa.md
+        - M7: fase4/Usabilidade/m7usa.md
     - 'Portabilidade':
-        -'M1': fase4/Portabilidade/m1port.md
-        -'M2': fase4/Portabilidade/m2port.md
-        -'M3': fase4/Portabilidade/m3port.md
-        -'M4': fase4/Portabilidade/m4port.md
+        - M1: fase4/Portabilidade/m1port.md
+        - M2: fase4/Portabilidade/m2port.md
+        - M3: fase4/Portabilidade/m3port.md
+        - M4: fase4/Portabilidade/m4port.md
   - 'Proposta de melhoria': proposta.md
   - Gerenciamento do Projeto: 
      - Metodologia: psm/metodologia.md
