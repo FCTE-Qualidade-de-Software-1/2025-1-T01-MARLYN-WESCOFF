@@ -39,27 +39,33 @@ O critério de avaliação para cada imagem seguiu um processo de duas etapas:
 
 A compilação dos resultados desta análise dupla — varredura automática e validação auditiva com o **TalkBack** — será apresentada a seguir, com um inventário detalhado das imagens que requerem correção para estarem em plena conformidade.
 
-## Resultados da Métrica M1
+## Resultados da Métrica M4
 
-A análise da **Taxa de Sucesso da Tarefa (TSR)** utilizando ferramentas de acessibilidade buscou verificar se um usuário com deficiência conseguiria completar os fluxos essenciais da aplicação. A avaliação, baseada nas observações manuais e nos problemas técnicos encontrados, revelou a existência de barreiras críticas que levam a uma baixa ou nula taxa de sucesso em tarefas fundamentais.
+A análise da **Cobertura de Alternativas Textuais** foi realizada através de uma metodologia híbrida, combinando a varredura do Accessibility Scanner com a inspeção manual da experiência de um usuário de leitor de telas. A avaliação revelou falhas significativas na forma como os componentes visuais são descritos para tecnologias assistivas, o que viola o critério **WCAG 1.1.1 (Conteúdo Não Textual)**.
 
-### Análise de Tarefas Essenciais
+Os principais problemas identificados foram:
 
-Foram avaliados os seguintes cenários de tarefas, com base nos problemas documentados:
+### 1. Descrições de Itens Duplicadas
 
-* **Tarefa 1: Realizar Login ou Cadastro**
-    * **Observação:** Foi identificado que a "Navegação por telas não funciona em alguns campos" e que o "Contraste falho no botão de criar conta"  dificulta a leitura. Adicionalmente, o fluxo de login se mostrou confuso, com o sistema navegando entre telas de forma inesperada.
-    * **Análise de Sucesso:** A incapacidade de navegar para campos essenciais do formulário via teclado representa uma **barreira bloqueadora**. Um usuário que depende do teclado **não consegue** completar o cadastro ou login. Portanto, a taxa de sucesso para este perfil de usuário é de **0%**.
+A ferramenta Accessibility Scanner identificou um problema crítico em telas de formulário.
 
-* **Tarefa 2: Acessar Conteúdo Informativo na Tela Inicial**
-    * **Observação:** Foi constatado que o "Leitor de telas não lê o carrossel", que é um componente de destaque na tela inicial.
-    * **Análise de Sucesso:** Qualquer tarefa que dependa da informação contida no carrossel (ex: "encontrar a promoção X" ou "ver as novidades") é **impossível** para um usuário com deficiência visual que utiliza leitor de telas. A taxa de sucesso para este perfil de usuário nesta tarefa é de **0%**.
+* **Observação:** Foi reportado o erro **"Item descriptions: Multiple items have the same description"** (Múltiplos itens têm a mesma descrição) na tela com os campos de "Senha" e "Confirmar Senha".
+* **Análise:** Este erro geralmente ocorre quando múltiplos elementos, como os ícones de cadeado ao lado dos campos, possuem o mesmo rótulo acessível ou não possuem nenhum. Para um usuário de leitor de telas, isso torna impossível distinguir os dois campos, pois ambos seriam anunciados de forma idêntica, gerando grande confusão e potencial para erros.
+
+### 2. Componentes Complexos sem Alternativa Textual
+
+A avaliação manual, simulando o uso de um leitor de telas, identificou que componentes importantes da interface são completamente "invisíveis" para tecnologias assistivas.
+
+* **Observação:** Foi constatado que o **"Leitor de telas não lê o carrossel"** da tela inicial.
+* **Análise:** A inacessibilidade do carrossel indica que o componente foi construído sem os atributos de acessibilidade necessários para descrever seu conteúdo (as imagens e textos) e sua funcionalidade (os controles de navegação). Como resultado, todo o conteúdo informativo presente no carrossel é inacessível para usuários com deficiência visual.
 
 ### Conclusão dos Resultados
 
-A combinação de falhas críticas de navegação e componentes inacessíveis resulta em uma **Taxa de Sucesso da Tarefa (TSR) extremamente baixa** para usuários que dependem de tecnologias assistivas. Para múltiplos fluxos essenciais da aplicação, a taxa de sucesso para esses usuários é efetivamente **0%**, pois eles são completamente impedidos de prosseguir.
+A aplicação possui falhas graves na implementação de alternativas textuais, tanto em componentes simples (ícones em formulários) quanto em componentes complexos (carrossel). Isso cria barreiras que impedem usuários de leitores de tela de compreender e interagir com partes essenciais da interface.
 
-**Recomendação:** A correção das barreiras bloqueadoras identificadas nas outras métricas (especialmente as de navegação por teclado e acessibilidade de componentes) é de **prioridade máxima**. Enquanto estes problemas não forem resolvidos, a aplicação não pode ser considerada funcionalmente eficaz para usuários com deficiências motoras ou visuais.
+O **Índice de Cobertura de Alternativas Textuais** é considerado **Insatisfatório**, pois as falhas encontradas comprometem a funcionalidade e a percepção de informações críticas.
+
+**Recomendação:** É necessária uma revisão completa de todos os componentes visuais e interativos da aplicação. Ícones e imagens informativas devem receber um rótulo acessível (`contentDescription` no Android) único e descritivo. Componentes complexos como o carrossel devem ser refatorados para serem totalmente compatíveis com leitores de tela.
 
 ## Bibliografia
 
