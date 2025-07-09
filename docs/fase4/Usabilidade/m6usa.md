@@ -37,13 +37,33 @@ Durante a navegação, cada componente interativo foi avaliado com base em um ch
 Os resultados desta auditoria serão apresentados a seguir, com um levantamento detalhado de cada elemento que falhou em um ou mais dos critérios listados. Esta documentação servirá como um guia de alta prioridade para a correção das barreiras de navegação encontradas.
 
 
-## Resultados
+## Resultados da Métrica M6
 
-A partir da execução da métrica M1, observou-se que a tarefa de Realizar Cadastro na CSA pôde ser completada com relativa fluidez, apresentando um tempo médio de 26,10 segundos, indicando um bom desempenho da interface quanto à agilidade e simplicidade de interação.
+A análise da cobertura de navegação por teclado, realizada através da inspeção funcional da aplicação, revelou barreiras de acessibilidade críticas que impedem a operação completa da interface sem o uso de um mouse. Os resultados indicam uma não conformidade com o critério **WCAG 2.1.1**, que exige que toda funcionalidade seja operável via teclado.
 
-No entanto, durante a análise prática, foi identificada uma interferência significativa no fluxo da tarefa: ao tocar no botão "Criar uma conta", a tela de cadastro pisca brevemente e é sobreposta por um modal de busca de CSA, forçando o usuário a uma etapa manualmente para retomar o processo. Esse tipo de comportamento pode causar confusão e frustração, além de violar o princípio de previsibilidade da interface.
+Os problemas identificados foram:
 
-Dessa forma, considerando os critérios definidos na Fase 2, a métrica M1 foi classificada com a **pontuação 7 (Bom)**, o que significa que a aplicação atende de forma satisfatória, mas apresenta oportunidades claras de melhoria, especialmente relacionadas ao fluxo de navegação e comportamento da interface.
+### 1. Componentes Complexos Inacessíveis
+
+Certos componentes da interface não são reconhecidos ou operáveis por tecnologias assistivas, o que na prática os torna invisíveis para a navegação por teclado.
+
+* **Observação:** Foi constatado que o "Leitor de telas não lê o carrossel" na tela inicial.
+* **Análise:** A inacessibilidade do carrossel para leitores de tela é um forte indicativo de que o componente não foi construído com a semântica de código apropriada (seja HTML ou atributos nativos). Como resultado, o foco do teclado provavelmente ignora este componente por completo, impedindo que um usuário de teclado navegue por seus itens ou os ative.
+
+### 2. Falhas na Navegação entre Campos
+
+A auditoria manual identificou quebras no fluxo de navegação, impedindo o usuário de acessar todos os elementos interativos de forma sequencial.
+
+* **Observação:** Foi reportado que a "Navegação por telas não funciona em alguns campos".
+* **Análise:** Esta é uma falha de operabilidade grave. Ela sugere a existência de "focos fantasmas" (quando o foco do teclado desaparece), "armadilhas de teclado" (quando o foco fica preso em um elemento) ou que certos elementos que parecem interativos não são de fato focáveis. O resultado prático é que o usuário é bloqueado e não consegue completar sua jornada na aplicação.
+
+### Conclusão dos Resultados
+
+As falhas encontradas representam barreiras críticas que tornam a aplicação **inutilizável** para pessoas que dependem exclusivamente do teclado para navegar, como usuários com deficiências motoras.
+
+O **Índice de Cobertura de Navegação por Teclado** é considerado **Insatisfatório**, pois problemas fundamentais foram encontrados em componentes importantes e no fluxo de navegação geral.
+
+**Recomendação:** É necessária uma auditoria manual completa de teclado em todas as telas da aplicação para mapear cada falha na ordem de foco, na operabilidade dos componentes e para identificar "armadilhas". O componente de carrossel precisa ser refatorado ou substituído por uma alternativa acessível.
 
 ## Bibliografia
 
@@ -55,9 +75,3 @@ Dessa forma, considerando os critérios definidos na Fase 2, a métrica M1 foi c
 
 > [2] NIELSEN, Jakob. Mobile Usability. Berkeley: New Riders Pub, 2012.
 
-## Histórico de Versões
-
-|Versão|Data|Descrição|Autor|Revisor|
-|:----:|----|---------|-----|:-------:|
-|`1.0`|07/07/2025|Criação do documento| [Weverton Rodrigues](https://github.com/vevetin) | [Ana Júlia](https://github.com/ailujana) |
-|`1.1`|07/07/2025|Melhoria da escrita|[Maria Clara](https://github.com/Oleari19)| [Maurício Ferreira](https://github.com/mauricio-araujoo) |

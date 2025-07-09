@@ -57,9 +57,3 @@ Dessa forma, considerando os critérios definidos na Fase 2, a métrica M1 foi c
 
 > [2] NIELSEN, Jakob. Mobile Usability. Berkeley: New Riders Pub, 2012.
 
-## Histórico de Versões
-
-|Versão|Data|Descrição|Autor|Revisor|
-|:----:|----|---------|-----|:-------:|
-|`1.0`|07/07/2025|Criação do documento| [Weverton Rodrigues](https://github.com/vevetin) | [Ana Júlia](https://github.com/ailujana) |
-|`1.1`|07/07/2025|Melhoria da escrita|[Maria Clara](https://github.com/Oleari19)| [Maurício Ferreira](https://github.com/mauricio-araujoo) |

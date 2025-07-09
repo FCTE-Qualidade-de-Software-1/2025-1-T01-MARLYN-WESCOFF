@@ -41,13 +41,43 @@ A segunda parte da análise concentrou-se nos rótulos de componentes interativo
 * **Clareza do Rótulo:** Avaliação se o texto do rótulo descrevia de forma precisa e inequívoca a função do componente.
 
 Os resultados desta revisão de código, incluindo exemplos de boas práticas e de pontos que necessitam de refatoração para estar em conformidade com o critério 2.4.6, serão apresentados a seguir. O objetivo é fornecer um guia técnico para a equipe de desenvolvimento aprimorar a base semântica da aplicação.
-## Resultados
 
-A partir da execução da métrica M1, observou-se que a tarefa de Realizar Cadastro na CSA pôde ser completada com relativa fluidez, apresentando um tempo médio de 26,10 segundos, indicando um bom desempenho da interface quanto à agilidade e simplicidade de interação.
+## Resultados da Métrica M7
 
-No entanto, durante a análise prática, foi identificada uma interferência significativa no fluxo da tarefa: ao tocar no botão "Criar uma conta", a tela de cadastro pisca brevemente e é sobreposta por um modal de busca de CSA, forçando o usuário a uma etapa manualmente para retomar o processo. Esse tipo de comportamento pode causar confusão e frustração, além de violar o princípio de previsibilidade da interface.
+A análise do código da aplicação, realizada com base nos relatórios do Accessibility Scanner e nos logs de console presentes no documento, revelou diversas oportunidades de melhoria na estrutura técnica, semântica e de navegação da plataforma.
 
-Dessa forma, considerando os critérios definidos na Fase 2, a métrica M1 foi classificada com a **pontuação 7 (Bom)**, o que significa que a aplicação atende de forma satisfatória, mas apresenta oportunidades claras de melhoria, especialmente relacionadas ao fluxo de navegação e comportamento da interface.
+Os resultados foram categorizados da seguinte forma:
+
+### 1. Rótulos de Componente Duplicados e Ausentes
+
+A análise apontou falhas na forma como os componentes são descritos para tecnologias assistivas, um pilar do critério WCAG 2.4.6 (Títulos e Rótulos).
+
+* **Descrições Duplicadas:** Na tela de senha, a ferramenta identificou que "múltiplos itens têm a mesma descrição". Isso confunde usuários de leitores de tela, que não conseguem diferenciar campos como "Senha" e "Confirmar Senha" se ambos forem anunciados da mesma forma.
+* **Componentes Sem Leitura:** Foi observado que o "leitor de telas não lê o carrossel" presente na tela inicial. Isso indica que o componente do carrossel foi construído sem os atributos de acessibilidade necessários (como papéis ARIA ou `contentDescription` adequados), tornando seu conteúdo invisível para usuários com deficiência visual.
+* **Ponto Positivo:** Em uma nota positiva, foi verificado que o sistema identifica corretamente os papéis básicos de botões e campos de texto na maioria das telas.
+
+### 2. Arquitetura de Navegação
+
+Os logs do console da aplicação revelaram um problema estrutural na forma como as telas de navegação são nomeadas.
+
+* **Nomes de Tela Aninhados:** O sistema emite um aviso de que foram "encontradas telas com o mesmo nome aninhadas umas nas outras", especificamente `Home, Home > Home`.
+* **Impacto no Usuário:** O próprio log de erro alerta que este problema "pode causar um comportamento confuso durante a navegação", recomendando o uso de nomes únicos para cada tela.
+* **Falha Funcional:** A observação de que a "navegação por telas não funciona em alguns campos" pode ser um sintoma direto desse problema de arquitetura.
+
+### 3. Qualidade e Manutenção do Código
+
+Foram identificados avisos que apontam para o uso de código que precisa de atualização.
+
+* **Código Depreciado:** Um aviso no console indica que `ViewPropTypes` será removido de futuras versões do React Native. Embora não seja um erro de acessibilidade direto, o uso de padrões de código depreciados é um indicador de dívida técnica e pode levar a problemas de compatibilidade e manutenção no futuro.
+
+### Conclusão dos Resultados
+
+A análise do código revela que, embora os elementos básicos sejam reconhecidos, existem falhas estruturais significativas que comprometem a acessibilidade e a usabilidade. Problemas com rótulos duplicados/ausentes e a arquitetura de navegação criam barreiras diretas para usuários de tecnologias assistivas e podem gerar confusão para todos os usuários.
+
+**Recomendação:** Recomenda-se uma refatoração técnica focada em:
+1.  Garantir que todos os componentes interativos, especialmente em formulários, tenham rótulos únicos e descritivos.
+2.  Corrigir a estrutura de navegação para que todas as telas possuam nomes exclusivos.
+3.  Atualizar o código para remover o uso de propriedades depreciadas e seguir as práticas atuais do framework.
 
 ## Bibliografia
 
@@ -58,10 +88,3 @@ Dessa forma, considerando os critérios definidos na Fase 2, a métrica M1 foi c
 > [1] ISO/IEC. ISO/IEC 25010:2011 — Systems and software engineering – Systems and software Quality Requirements and Evaluation (SQuaRE) – System and software quality models. International Organization for Standardization, 2011.
 
 > [2] NIELSEN, Jakob. Mobile Usability. Berkeley: New Riders Pub, 2012.
-
-## Histórico de Versões
-
-|Versão|Data|Descrição|Autor|Revisor|
-|:----:|----|---------|-----|:-------:|
-|`1.0`|07/07/2025|Criação do documento| [Weverton Rodrigues](https://github.com/vevetin) | [Ana Júlia](https://github.com/ailujana) |
-|`1.1`|07/07/2025|Melhoria da escrita|[Maria Clara](https://github.com/Oleari19)| [Maurício Ferreira](https://github.com/mauricio-araujoo) |
