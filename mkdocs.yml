@@ -65,7 +65,10 @@ nav:
         - M2: fase4/Portabilidade/m2port.md
         - M3: fase4/Portabilidade/m3port.md
         - M4: fase4/Portabilidade/m4port.md
-  - 'Proposta de melhoria': proposta.md
+  - 'Proposta de melhoria': 
+      - Introdução: proposta/introducao.md
+      - Usabilidade: proposta/usabilidade.md
+      - Portabilidade: proposta/portabilidade.md
   - Gerenciamento do Projeto: 
      - Metodologia: psm/metodologia.md
      - Desempenho e Processo: psm/desempenho.md
