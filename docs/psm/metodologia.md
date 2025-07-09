@@ -10,7 +10,7 @@ O modelo PSM/CID foi aplicado com foco nos seguintes pilares:
 - **Calendário e Progresso**
 - **Recursos e Custos**
 
-Cada um desses pilares foi monitorado com base em indicadores específicos, definidos logo no início do projeto.
+Cada um desses pilares foi acompanhado por meio de métricas específicas, definidas logo no início do projeto, permitindo uma gestão baseada em dados para apoiar a tomada de decisão.
 
 | Eixo                   | Aspectos Avaliados                                             | Descrição / Objetivo                                                        |
 |------------------------|----------------------------------------------------------------|-----------------------------------------------------------------------------|
@@ -37,17 +37,6 @@ A integração das métricas ao contexto do projeto **AgroMart** permitiu:
 - Tomada de decisão baseada em dados
 - Aumento da transparência na execução
 - Registro de evidências para avaliação acadêmica e técnica
-
-### Tabela de Contribuição
-
-| Nome                                      | Matrícula   | Contribuição |
-|-------------------------------------------|-------------|--------------|
-| [Caio Sabino](https://github.com/caiomsabino)         | 231026302   | 45%       |
-| [João Lobo](https://github.com/joaolobo10)            | 231012245   |   30%     |
-| [João Sapiencia](https://github.com/JoaoSapiencia)    | 231026400   | 10%       |
-| [Brenno Silva](https://github.com/Brenno-Silva01)     | 190085045   | 5%       |
-| [Igor Thiago](https://github.com/Igor-Thiago)         | 190029692   | 5%       |
-| [Rodrigo Gontijo](https://github.com/rodrigogontijoo) | 190116498   | 5%       |
 
 # Histório de Versão
 
