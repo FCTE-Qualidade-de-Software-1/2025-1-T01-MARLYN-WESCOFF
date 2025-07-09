@@ -106,3 +106,10 @@ Refatorar os componentes mais complexos, extrair strings e dimensões para arqui
 
 #### Solução Proposta
 Estabelecer e documentar um guia de estilo de código para a equipe. Integrar uma ferramenta de análise estática (Lint) no processo de Integração Contínua (CI), configurando-a para falhar um build caso novas "hardcoded strings" ou violações de complexidade sejam adicionadas, prevenindo o aumento da dívida técnica.
+
+
+## Protótipo de alta fidelidade
+
+O protótipo foi feito com base nas métricas analisadas e as soluções encontradas. Está disponível no [link](https://www.figma.com/proto/lGOxQeUMYhSZFf3qds5pCK/qsw?page-id=0%3A1&node-id=11-130&p=f&viewport=831%2C336%2C0.42&t=RQrrLJV3Uk0Y5TA6-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=11%3A130).
+
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="450" height="800" src="https://embed.figma.com/proto/lGOxQeUMYhSZFf3qds5pCK/qsw?page-id=0%3A1&node-id=11-130&viewport=717%2C320%2C0.45&scaling=scale-down&content-scaling=fixed&starting-point-node-id=11%3A130&embed-host=share" allowfullscreen></iframe>
