@@ -39,13 +39,27 @@ O critério de avaliação para cada imagem seguiu um processo de duas etapas:
 
 A compilação dos resultados desta análise dupla — varredura automática e validação auditiva com o **TalkBack** — será apresentada a seguir, com um inventário detalhado das imagens que requerem correção para estarem em plena conformidade.
 
-## Resultados
+## Resultados da Métrica M1
 
-A partir da execução da métrica M1, observou-se que a tarefa de Realizar Cadastro na CSA pôde ser completada com relativa fluidez, apresentando um tempo médio de 26,10 segundos, indicando um bom desempenho da interface quanto à agilidade e simplicidade de interação.
+A análise da **Taxa de Sucesso da Tarefa (TSR)** utilizando ferramentas de acessibilidade buscou verificar se um usuário com deficiência conseguiria completar os fluxos essenciais da aplicação. A avaliação, baseada nas observações manuais e nos problemas técnicos encontrados, revelou a existência de barreiras críticas que levam a uma baixa ou nula taxa de sucesso em tarefas fundamentais.
 
-No entanto, durante a análise prática, foi identificada uma interferência significativa no fluxo da tarefa: ao tocar no botão "Criar uma conta", a tela de cadastro pisca brevemente e é sobreposta por um modal de busca de CSA, forçando o usuário a uma etapa manualmente para retomar o processo. Esse tipo de comportamento pode causar confusão e frustração, além de violar o princípio de previsibilidade da interface.
+### Análise de Tarefas Essenciais
 
-Dessa forma, considerando os critérios definidos na Fase 2, a métrica M1 foi classificada com a **pontuação 7 (Bom)**, o que significa que a aplicação atende de forma satisfatória, mas apresenta oportunidades claras de melhoria, especialmente relacionadas ao fluxo de navegação e comportamento da interface.
+Foram avaliados os seguintes cenários de tarefas, com base nos problemas documentados:
+
+* **Tarefa 1: Realizar Login ou Cadastro**
+    * **Observação:** Foi identificado que a "Navegação por telas não funciona em alguns campos" e que o "Contraste falho no botão de criar conta"  dificulta a leitura. Adicionalmente, o fluxo de login se mostrou confuso, com o sistema navegando entre telas de forma inesperada.
+    * **Análise de Sucesso:** A incapacidade de navegar para campos essenciais do formulário via teclado representa uma **barreira bloqueadora**. Um usuário que depende do teclado **não consegue** completar o cadastro ou login. Portanto, a taxa de sucesso para este perfil de usuário é de **0%**.
+
+* **Tarefa 2: Acessar Conteúdo Informativo na Tela Inicial**
+    * **Observação:** Foi constatado que o "Leitor de telas não lê o carrossel", que é um componente de destaque na tela inicial.
+    * **Análise de Sucesso:** Qualquer tarefa que dependa da informação contida no carrossel (ex: "encontrar a promoção X" ou "ver as novidades") é **impossível** para um usuário com deficiência visual que utiliza leitor de telas. A taxa de sucesso para este perfil de usuário nesta tarefa é de **0%**.
+
+### Conclusão dos Resultados
+
+A combinação de falhas críticas de navegação e componentes inacessíveis resulta em uma **Taxa de Sucesso da Tarefa (TSR) extremamente baixa** para usuários que dependem de tecnologias assistivas. Para múltiplos fluxos essenciais da aplicação, a taxa de sucesso para esses usuários é efetivamente **0%**, pois eles são completamente impedidos de prosseguir.
+
+**Recomendação:** A correção das barreiras bloqueadoras identificadas nas outras métricas (especialmente as de navegação por teclado e acessibilidade de componentes) é de **prioridade máxima**. Enquanto estes problemas não forem resolvidos, a aplicação não pode ser considerada funcionalmente eficaz para usuários com deficiências motoras ou visuais.
 
 ## Bibliografia
 
