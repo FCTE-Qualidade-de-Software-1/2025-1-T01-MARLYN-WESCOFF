@@ -1,4 +1,4 @@
-# Portabilidade - M1: índice de responsividade
+# Portabilidade - M1: Índice de Responsividade
 
 ## Introdução
 
@@ -6,97 +6,36 @@ A métrica M1, Índice de Responsividade, é o principal indicador para avaliar 
 adaptabilidade a diferentes ambientes de visualização. Este índice mede a capacidade da interface de se ajustar de forma fluida e funcional 
 a uma ampla gama de tamanhos de tela e resoluções, desde pequenos dispositivos móveis até monitores de desktop de alta resolução.
 
-## Referencial teórico 
+## Referencial Teórico
 
-Segundo a norma ISO/IEC 25010 <sup>[1]</sup>, a Usabilidade pode ser definida como "o grau com que um produto ou sistema pode ser usado por usuários específicos para alcançar objetivos específicos com precisão e completude, dentro de um tempo adequado e com esforço razoável".
-
-No contexto mobile-first, onde o uso é predominantemente por meio de telas sensíveis ao toque, a métrica de tempo médio para completar tarefas torna-se um indicador direto da fluidez e facilidade de uso da interface.
-
-De acordo com Nielsen <sup>[2]</sup>, uma boa usabilidade em dispositivos móveis depende, entre outros fatores, da disposição clara dos elementos de interação, tamanho adequado dos alvos de toque, e da redução do número de etapas para realizar uma tarefa.
-
-Portanto, quanto menor o tempo médio de execução de tarefas essenciais, maior a eficiência e usabilidade percebidas, impactando diretamente na satisfação e retenção dos usuários.
+A base para esta métrica vem da norma **ISO/IEC 25010**, que define a **Portabilidade** como uma característica de qualidade. Especificamente, a M1 está ligada à sub-característica de **Adaptabilidade**, que é a capacidade do produto de ser utilizado de forma eficaz em diferentes ambientes de hardware, software ou de uso. Um aplicativo que não se adapta à rotação ou ao zoom falha neste quesito.
 
 ## Análise
 
-Dessa forma, a avaliação será dada de forma quantitativa, com base no tempo médio necessário para que usuários concluam tarefas específicas por meio de interações por toque na interface mobile do Agromart.
+Para a análise deste tópico, foi utilizado o **Android Emulator** para simular um ambiente de dispositivo móvel e suas funcionalidades nativas. A metodologia consistiu em executar um conjunto de tarefas que exploram a adaptabilidade da interface em tempo real.
 
-As tarefas selecionadas para análise foram baseadas em funcionalidades essenciais do sistema, como as descritas na [documentação de histórias de usuário](https://agromart.github.io/docs/docs/modelagem/historiaDeUsuario/co-agricultor), com foco em ações recorrentes, como o agendamento de serviços, visualização de informações e finalização de solicitações.
+As ferramentas e procedimentos utilizados foram:
 
-Os critérios de julgamento e níveis de pontuação da métrica serão utilizados conforme especificados na [Fase 2](../../gqm/gqm.md#níveis-de-pontuação-das-métricas), considerando o tempo médio por tarefa e sua comparação com padrões de usabilidade mobile encontrados na literatura e/ou definidos pela equipe.
+* **Controle de Rotação do Emulador:** Para alternar a visualização entre os modos retrato e paisagem.
+* **Gestos de Magnificação do Android:** Para simular o gesto de pinça para zoom, ativado nas configurações de Acessibilidade do sistema.
+* **Inspeção Visual:** Observação direta do comportamento da interface durante a execução das tarefas.
 
-A partir desses dados, será possível verificar se o tempo de execução observado está de acordo com o desempenho esperado, e se o sistema oferece uma experiência eficiente e fluida aos usuários em dispositivos móveis.
+As tarefas selecionadas para análise foram:
 
-## Execução da análise
+* **Tarefa 1:** Abrir a tela inicial e rotacionar o dispositivo para o modo paisagem, observando a reorganização dos componentes.
+* **Tarefa 2:** Acessar a tela de detalhes de um produtor, que contém blocos de texto longos.
+* **Tarefa 3:** Na tela de detalhes, ativar o zoom de magnificação e tentar ler a descrição completa do produtor.
 
-A avaliação foi conduzida por meio de testes exploratórios, nos quais foi realizada a simulação do uso do sistema Agromart em ambiente mobile, a partir da perspectiva de um usuário final. As interações foram realizadas em um dispositivo com tela sensível ao toque, com o objetivo de observar o tempo necessário para a execução de tarefas essenciais exclusivamente por meio de toques (tap) na interface.
-
-Dentre as histórias de usuário disponíveis, apenas a US01: Realizar Cadastro na CSA apresentou estrutura e fluxo funcional suficiente para possibilitar a avaliação da métrica de tempo médio de execução. A história foi escolhida por representar uma tarefa comum e crítica, com boa clareza e alta testabilidade.
-
-A tarefa foi executada três vezes consecutivas, simulando o comportamento de um usuário comum. O tempo de execução foi cronometrado manualmente, considerando o intervalo entre o primeiro toque relacionado ao início do cadastro e a finalização do processo (toque no botão de envio/registro).
-
-A seguir, a Tabela 1 apresenta os tempos registrados em cada tentativa e o valor médio calculado.
-
-<div style="text-align: center">
-
-  <font size="3">
-    <p><b>Tabela 1 – Tempos de execução da US01: Realizar Cadastro na CSA</b></p>
-  </font>
-
-  <table border="1" style="margin: 0 auto;">
-    <thead>
-      <tr>
-        <th>Tentativa</th>
-        <th>Tempo de execução (s)</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td>27,43</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>24,57</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>26,31</td>
-      </tr>
-      <tr>
-        <td><b>Média total</b></td>
-        <td><b>26,10</b></td>
-      </tr>
-    </tbody>
-  </table>
-
-  <font size="3">
-    <p><b>Autor:</b> <a href="https://github.com/vevetin">Weverton Rodrigues</a></p>
-  </font>
-
-</div>
-
+A seguir, serão apresentados os resultados detalhados da execução de cada uma dessas tarefas.
 
 ## Resultados
 
-A partir da execução da métrica M1, observou-se que a tarefa de Realizar Cadastro na CSA pôde ser completada com relativa fluidez, apresentando um tempo médio de 26,10 segundos, indicando um bom desempenho da interface quanto à agilidade e simplicidade de interação.
+A partir da execução das tarefas, observou-se que o aplicativo apresenta falhas críticas de responsividade. Primeiramente, a **rotação de tela está completamente bloqueada**, impedindo a execução da Tarefa 1. A aplicação força o usuário a permanecer no modo retrato.
 
-No entanto, durante a análise prática, foi identificada uma interferência significativa no fluxo da tarefa: ao tocar no botão "Criar uma conta", a tela de cadastro pisca brevemente e é sobreposta por um modal de busca de CSA, forçando o usuário a uma etapa manualmente para retomar o processo. Esse tipo de comportamento pode causar confusão e frustração, além de violar o princípio de previsibilidade da interface.
+Na Tarefa 3, ao tentar utilizar o zoom, o problema se manifestou de forma severa: o conteúdo textual e os botões foram **cortados e empurrados para fora da área visível**, sem a possibilidade de rolagem horizontal para acessá-los. Isso torna a funcionalidade de zoom inutilizável e prejudica massivamente a acessibilidade.
 
-Dessa forma, considerando os critérios definidos na Fase 2, a métrica M1 foi classificada com a **pontuação 7 (Bom)**, o que significa que a aplicação atende de forma satisfatória, mas apresenta oportunidades claras de melhoria, especialmente relacionadas ao fluxo de navegação e comportamento da interface.
+Dessa forma, considerando que a funcionalidade é severamente comprometida em contextos de uso comuns, a métrica M1 foi classificada com a **pontuação 2 (Muito Ruim)**. A aplicação falha em se adaptar, tornando partes de sua interface inutilizáveis sob certas condições.
 
-## Bibliografia
+## Referencias Bibliográficas
 
-> \- Documentação de histórias de usuário do AgroMart. Disponível em: <https://agromart.github.io/docs/docs/modelagem/historiaDeUsuario/co-agricultor>. Acesso em: 07 de julho de 2025.
-
-## Referências Bibliográficas
-
-> [1] ISO/IEC. ISO/IEC 25010:2011 — Systems and software engineering – Systems and software Quality Requirements and Evaluation (SQuaRE) – System and software quality models. International Organization for Standardization, 2011.
-
-> [2] NIELSEN, Jakob. Mobile Usability. Berkeley: New Riders Pub, 2012.
-
-## Histórico de Versões
-
-|Versão|Data|Descrição|Autor|Revisor|
-|:----:|----|---------|-----|:-------:|
-|`1.0`|07/07/2025|Criação do documento| [Weverton Rodrigues](https://github.com/vevetin) | [Ana Júlia](https://github.com/ailujana) |
-|`1.1`|07/07/2025|Melhoria da escrita|[Maria Clara](https://github.com/Oleari19)| [Maurício Ferreira](https://github.com/mauricio-araujoo) |
+>  ISO/IEC 25010. Disponível em: <https://iso25000.com/index.php/en/iso-25000-standards/iso-25010>. Acesso em: 19 de maio de 2025.

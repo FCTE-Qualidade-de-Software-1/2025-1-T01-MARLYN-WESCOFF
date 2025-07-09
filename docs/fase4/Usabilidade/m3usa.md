@@ -28,13 +28,26 @@ A análise considerou como falha qualquer elemento que não atendesse aos crité
 
 A seguir, será apresentado o levantamento completo de todos os objetos e componentes que apresentaram contraste insuficiente, formando um backlog claro de itens a serem corrigidos pela equipe de design para garantir a legibilidade e a acessibilidade da plataforma.
 
-## Resultados
+## Resultados da Métrica M3
 
-A partir da execução da métrica M1, observou-se que a tarefa de Realizar Cadastro na CSA pôde ser completada com relativa fluidez, apresentando um tempo médio de 26,10 segundos, indicando um bom desempenho da interface quanto à agilidade e simplicidade de interação.
+A análise do **Índice de Conformidade de Contraste** revelou que este é um dos pontos mais críticos de acessibilidade na aplicação. Utilizando a ferramenta Accessibility Scanner e a inspeção visual, foram encontrados múltiplos componentes com taxas de contraste insuficientes, violando diretamente o critério **WCAG 1.4.3**.
 
-No entanto, durante a análise prática, foi identificada uma interferência significativa no fluxo da tarefa: ao tocar no botão "Criar uma conta", a tela de cadastro pisca brevemente e é sobreposta por um modal de busca de CSA, forçando o usuário a uma etapa manualmente para retomar o processo. Esse tipo de comportamento pode causar confusão e frustração, além de violar o princípio de previsibilidade da interface.
+### Levantamento dos Problemas de Contraste Encontrados
 
-Dessa forma, considerando os critérios definidos na Fase 2, a métrica M1 foi classificada com a **pontuação 7 (Bom)**, o que significa que a aplicação atende de forma satisfatória, mas apresenta oportunidades claras de melhoria, especialmente relacionadas ao fluxo de navegação e comportamento da interface.
+Os seguintes elementos apresentaram falhas de contraste em diversas telas da aplicação:
+
+* **Botão "Criar Conta" / "Cadastrar":** O texto sobre o botão principal de ação possui contraste falho, dificultando a leitura. A tela de cadastro com este botão pode ser vista na página 5 do documento de análise.
+* **Carrossel de Imagens:** O carrossel presente na tela inicial apresenta um contraste ruim entre as imagens de fundo e os elementos sobrepostos.
+* **Campos de Formulário:** Foi detectado baixo contraste no texto dos campos de "Senha" e "Confirmar"  na tela de cadastro.
+* **Ícones de Navegação:** Diversos ícones que funcionam como botões apresentaram baixo contraste, incluindo o botão "Home" na barra de navegação inferior, os ícones da barra de navegação em geral e os ícones de seta ">".
+
+### Conclusão dos Resultados
+
+A recorrência de problemas de contraste em componentes essenciais (botões de ação, campos de formulário e ícones de navegação) indica que a paleta de cores principal da aplicação não foi otimizada para acessibilidade. Isso prejudica diretamente usuários com baixa visão e pode dificultar o uso para todos os usuários em ambientes com muita luz.
+
+O **Índice de Conformidade de Contraste** da aplicação é considerado **Insatisfatório**, dado que as falhas ocorrem em múltiplos fluxos críticos, como login, cadastro e navegação principal.
+
+**Recomendação:** É necessária uma revisão completa da paleta de cores do design system da aplicação. A equipe de design deve ajustar as cores primárias e secundárias para garantir que todo texto atenda à taxa de contraste mínima de `4.5:1` e que os componentes gráficos e de interface atinjam a taxa mínima de `3:1`, conforme exigido pelo WCAG.
 
 ## Bibliografia
 
@@ -46,9 +59,3 @@ Dessa forma, considerando os critérios definidos na Fase 2, a métrica M1 foi c
 
 > [2] NIELSEN, Jakob. Mobile Usability. Berkeley: New Riders Pub, 2012.
 
-## Histórico de Versões
-
-|Versão|Data|Descrição|Autor|Revisor|
-|:----:|----|---------|-----|:-------:|
-|`1.0`|07/07/2025|Criação do documento| [Weverton Rodrigues](https://github.com/vevetin) | [Ana Júlia](https://github.com/ailujana) |
-|`1.1`|07/07/2025|Melhoria da escrita|[Maria Clara](https://github.com/Oleari19)| [Maurício Ferreira](https://github.com/mauricio-araujoo) |

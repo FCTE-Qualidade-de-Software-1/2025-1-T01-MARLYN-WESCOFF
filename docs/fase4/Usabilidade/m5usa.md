@@ -30,13 +30,33 @@ Cada mensagem de feedback e erro foi avaliada com base nos seguintes critérios,
 Os resultados desta auditoria serão apresentados a seguir, detalhando os cenários testados e a conformidade de cada feedback observado. O objetivo é identificar oportunidades para tornar o tratamento de erros da aplicação mais informativo, acessível e centrado no usuário.
 
 
-## Resultados
+## Resultados da Métrica M5
 
-A partir da execução da métrica M1, observou-se que a tarefa de Realizar Cadastro na CSA pôde ser completada com relativa fluidez, apresentando um tempo médio de 26,10 segundos, indicando um bom desempenho da interface quanto à agilidade e simplicidade de interação.
+A análise da Métrica M5, focada na qualidade e acessibilidade das mensagens de feedback e erro, foi realizada através da simulação de erros nos fluxos de cadastro e login. A auditoria revelou não conformidades significativas com as diretrizes de usabilidade e acessibilidade (WCAG e NBR 17225).
 
-No entanto, durante a análise prática, foi identificada uma interferência significativa no fluxo da tarefa: ao tocar no botão "Criar uma conta", a tela de cadastro pisca brevemente e é sobreposta por um modal de busca de CSA, forçando o usuário a uma etapa manualmente para retomar o processo. Esse tipo de comportamento pode causar confusão e frustração, além de violar o princípio de previsibilidade da interface.
+Os problemas encontrados foram categorizados em duas frentes principais:
 
-Dessa forma, considerando os critérios definidos na Fase 2, a métrica M1 foi classificada com a **pontuação 7 (Bom)**, o que significa que a aplicação atende de forma satisfatória, mas apresenta oportunidades claras de melhoria, especialmente relacionadas ao fluxo de navegação e comportamento da interface.
+### 1. Validação de Formulários Dependente de Cor
+
+Conforme observado durante os testes, o sistema utiliza a cor como único meio de sinalizar um erro em campos de formulário.
+
+* **Observação:** Ao tentar submeter um formulário com um campo obrigatório não preenchido, o campo apenas altera sua cor para vermelho.
+* **Análise:** Esta abordagem falha em dois critérios críticos de acessibilidade:
+    * **Viola o WCAG 1.4.1 (Uso de Cor):** Usuários com deficiência de visão de cores (daltonismo) podem não perceber a mudança de cor, ficando sem saber qual campo precisa de correção.
+    * **Viola o WCAG 3.3.1 (Identificação de Erro):** O erro não é descrito em texto. Uma prática acessível seria exibir uma mensagem clara abaixo do campo, como "Este campo é obrigatório".
+
+### 2. Exposição de Mensagens de Erro Técnicas
+
+Foi identificado que, em certas condições, o sistema exibe mensagens de estado técnico diretamente para o usuário, em vez de uma mensagem clara e compreensível.
+
+* **Observação:** Na tela de login, foram observadas mensagens como `utilizando CSA: "undefined"` e `utilizando CSA: "null"`.
+* **Análise:** Este tipo de feedback viola a heurística de usabilidade de "ajudar os usuários a reconhecer, diagnosticar e se recuperar de erros". Mensagens com jargões técnicos como "null" ou "undefined" não têm significado para o usuário final, gerando confusão e desconfiança em relação ao funcionamento da aplicação.
+
+### Conclusão dos Resultados
+
+O sistema de tratamento de erros da aplicação é considerado **Insatisfatório**. Ele falha em comunicar os erros de forma acessível e clara, dependendo apenas de cor e expondo jargões técnicos que não auxiliam o usuário.
+
+**Recomendação:** É crucial refatorar o sistema de feedback. Todas as validações de erro devem ser acompanhadas de mensagens de texto explícitas e, sempre que possível, de um ícone. As mensagens de estado ou erro exibidas ao usuário devem ser reescritas em linguagem simples e humana, ocultando os detalhes de implementação do sistema.
 
 ## Bibliografia
 
@@ -48,9 +68,3 @@ Dessa forma, considerando os critérios definidos na Fase 2, a métrica M1 foi c
 
 > [2] NIELSEN, Jakob. Mobile Usability. Berkeley: New Riders Pub, 2012.
 
-## Histórico de Versões
-
-|Versão|Data|Descrição|Autor|Revisor|
-|:----:|----|---------|-----|:-------:|
-|`1.0`|07/07/2025|Criação do documento| [Weverton Rodrigues](https://github.com/vevetin) | [Ana Júlia](https://github.com/ailujana) |
-|`1.1`|07/07/2025|Melhoria da escrita|[Maria Clara](https://github.com/Oleari19)| [Maurício Ferreira](https://github.com/mauricio-araujoo) |

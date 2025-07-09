@@ -84,8 +84,8 @@ Para o nosso projeto, isso significa que, além de avaliar a qualidade do AgroMa
 
 ## Referências Bibliográficas
 
-> [1] AgroMart. Disponível em: <https://github.com/AgroMart>. Acesso em: 19 de maio de 2025.
+>  AgroMart. Disponível em: <https://github.com/AgroMart>. Acesso em: 19 de maio de 2025.
 
-> [2] ISO/IEC 25010. Disponível em: <https://iso25000.com/index.php/en/iso-25000-standards/iso-25010>. Acesso em: 19 de maio de 2025.
+>  ISO/IEC 25010. Disponível em: <https://iso25000.com/index.php/en/iso-25000-standards/iso-25010>. Acesso em: 19 de maio de 2025.
 
-> [3] ONU. Objetivos de Desenvolvimento Sustentável. Disponível em: <https://brasil.un.org/pt-br/sdgs>. Acesso em: 19 de maio de 2025.
+>  ONU. Objetivos de Desenvolvimento Sustentável. Disponível em: <https://brasil.un.org/pt-br/sdgs>. Acesso em: 19 de maio de 2025.
