@@ -1,103 +1,43 @@
-# Portabilidade - M3: Número de funcionalidades por plataforma
+# Portabilidade - M3: Número de Funções que Funcionam Sem Internet
 
 ## Introdução
 
-A métrica M3, Número de funcionalidades por plataforma, conclui a análise da Portabilidade do sistema, abordando a consistência do produto 
-em seu nível mais estratégico: o conjunto de funcionalidades oferecidas. Este indicador realiza um inventário quantitativo das 
-funcionalidades disponíveis em cada uma das plataformas onde o serviço opera (ex: Web, iOS, Android), com o objetivo de medir o grau de 
-paridade de funcionalidades entre elas.
+A métrica M3, Número de funções que funcionam sem internet, explora uma dimensão avançada da Portabilidade: a resiliência e a autonomia da 
+aplicação em ambientes de conectividade adversa. Este indicador quantifica o conjunto de funcionalidades que foram projetadas para 
+permanecerem operacionais no dispositivo do usuário mesmo quando não há uma conexão ativa com a internet, uma abordagem conhecida como 
+"offline-first".
 
-## Referencial teórico 
+## Referencial Teórico
 
-Segundo a norma ISO/IEC 25010 <sup>[1]</sup>, a Usabilidade pode ser definida como "o grau com que um produto ou sistema pode ser usado por usuários específicos para alcançar objetivos específicos com precisão e completude, dentro de um tempo adequado e com esforço razoável".
+Esta métrica se alinha a duas características de qualidade da norma **ISO/IEC 25010**. Primariamente, ela avalia a **Adequação Funcional**, especificamente a sua sub-característica de **Completude Funcional**. A completude é o grau em que o conjunto de funções cobre todas as tarefas e objetivos especificados pelo usuário. Do ponto de vista de um usuário da plataforma web, o produto AgroMart é funcionalmente incompleto em comparação com a versão mobile.
 
-No contexto mobile-first, onde o uso é predominantemente por meio de telas sensíveis ao toque, a métrica de tempo médio para completar tarefas torna-se um indicador direto da fluidez e facilidade de uso da interface.
-
-De acordo com Nielsen <sup>[2]</sup>, uma boa usabilidade em dispositivos móveis depende, entre outros fatores, da disposição clara dos elementos de interação, tamanho adequado dos alvos de toque, e da redução do número de etapas para realizar uma tarefa.
-
-Portanto, quanto menor o tempo médio de execução de tarefas essenciais, maior a eficiência e usabilidade percebidas, impactando diretamente na satisfação e retenção dos usuários.
-
+Secundariamente, uma grande disparidade funcional impacta a **Portabilidade**. Embora o código possa existir, a portabilidade estratégica do *valor* do produto entre as plataformas falhou. 
 ## Análise
 
-Dessa forma, a avaliação será dada de forma quantitativa, com base no tempo médio necessário para que usuários concluam tarefas específicas por meio de interações por toque na interface mobile do Agromart.
+A metodologia utilizada foi a simulação de um ambiente sem conexão de rede para observar o comportamento do aplicativo e inventariar as funções que permanecem ativas.
 
-As tarefas selecionadas para análise foram baseadas em funcionalidades essenciais do sistema, como as descritas na [documentação de histórias de usuário](https://agromart.github.io/docs/docs/modelagem/historiaDeUsuario/co-agricultor), com foco em ações recorrentes, como o agendamento de serviços, visualização de informações e finalização de solicitações.
+As ferramentas e procedimentos utilizados foram:
 
-Os critérios de julgamento e níveis de pontuação da métrica serão utilizados conforme especificados na [Fase 2](../../gqm/gqm.md#níveis-de-pontuação-das-métricas), considerando o tempo médio por tarefa e sua comparação com padrões de usabilidade mobile encontrados na literatura e/ou definidos pela equipe.
+  - **Android Emulator:** Utilizado para rodar a aplicação.
+  - **Modo Avião:** Ativado nas configurações do emulador para cortar todo o acesso à rede.
+  - **Inspeção Funcional:** Tentativa de uso das funcionalidades básicas do aplicativo após a perda de conexão.
 
-A partir desses dados, será possível verificar se o tempo de execução observado está de acordo com o desempenho esperado, e se o sistema oferece uma experiência eficiente e fluida aos usuários em dispositivos móveis.
+As tarefas selecionadas para análise foram:
 
-## Execução da análise
+- **Tarefa 1:** Com o aplicativo já tendo sido aberto com internet, ativar o "Modo Avião".
+- **Tarefa 2:** Reabrir o aplicativo e observar a tela inicial.
+- **Tarefa 3:** Tentar navegar para telas visitadas anteriormente, como a lista de produtores, e interagir com os dados.
 
-A avaliação foi conduzida por meio de testes exploratórios, nos quais foi realizada a simulação do uso do sistema Agromart em ambiente mobile, a partir da perspectiva de um usuário final. As interações foram realizadas em um dispositivo com tela sensível ao toque, com o objetivo de observar o tempo necessário para a execução de tarefas essenciais exclusivamente por meio de toques (tap) na interface.
-
-Dentre as histórias de usuário disponíveis, apenas a US01: Realizar Cadastro na CSA apresentou estrutura e fluxo funcional suficiente para possibilitar a avaliação da métrica de tempo médio de execução. A história foi escolhida por representar uma tarefa comum e crítica, com boa clareza e alta testabilidade.
-
-A tarefa foi executada três vezes consecutivas, simulando o comportamento de um usuário comum. O tempo de execução foi cronometrado manualmente, considerando o intervalo entre o primeiro toque relacionado ao início do cadastro e a finalização do processo (toque no botão de envio/registro).
-
-A seguir, a Tabela 1 apresenta os tempos registrados em cada tentativa e o valor médio calculado.
-
-<div style="text-align: center">
-
-  <font size="3">
-    <p><b>Tabela 1 – Tempos de execução da US01: Realizar Cadastro na CSA</b></p>
-  </font>
-
-  <table border="1" style="margin: 0 auto;">
-    <thead>
-      <tr>
-        <th>Tentativa</th>
-        <th>Tempo de execução (s)</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td>27,43</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>24,57</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>26,31</td>
-      </tr>
-      <tr>
-        <td><b>Média total</b></td>
-        <td><b>26,10</b></td>
-      </tr>
-    </tbody>
-  </table>
-
-  <font size="3">
-    <p><b>Autor:</b> <a href="https://github.com/vevetin">Weverton Rodrigues</a></p>
-  </font>
-
-</div>
-
+A seguir, os resultados desta simulação.
 
 ## Resultados
 
-A partir da execução da métrica M1, observou-se que a tarefa de Realizar Cadastro na CSA pôde ser completada com relativa fluidez, apresentando um tempo médio de 26,10 segundos, indicando um bom desempenho da interface quanto à agilidade e simplicidade de interação.
+Após a ativação do Modo Avião, o aplicativo AgroMart tornou-se **completamente inoperante**. Na reabertura, ele exibe uma tela de erro genérica ou fica em um estado de carregamento infinito, sem apresentar nenhum conteúdo previamente carregado. Não foi identificado nenhum mecanismo de cache local para exibir informações da última sessão.
 
-No entanto, durante a análise prática, foi identificada uma interferência significativa no fluxo da tarefa: ao tocar no botão "Criar uma conta", a tela de cadastro pisca brevemente e é sobreposta por um modal de busca de CSA, forçando o usuário a uma etapa manualmente para retomar o processo. Esse tipo de comportamento pode causar confusão e frustração, além de violar o princípio de previsibilidade da interface.
+O número de funções que funcionam sem internet é **zero**. A ausência total de um modo offline funcional significa que, para um usuário em uma área sem sinal (um cenário plausível para o público-alvo do AgroMart), o aplicativo não tem nenhuma utilidade.
 
-Dessa forma, considerando os critérios definidos na Fase 2, a métrica M1 foi classificada com a **pontuação 7 (Bom)**, o que significa que a aplicação atende de forma satisfatória, mas apresenta oportunidades claras de melhoria, especialmente relacionadas ao fluxo de navegação e comportamento da interface.
+Com base na falha total de operação em modo offline, a métrica M4 foi classificada com a **pontuação 1 (Crítico)**. O aplicativo não possui nenhuma capacidade de operação offline, comprometendo severamente sua utilidade e confiabilidade em cenários de conectividade intermitente ou inexistente.
 
-## Bibliografia
+## Referencias Bibliográficas
 
-> \- Documentação de histórias de usuário do AgroMart. Disponível em: <https://agromart.github.io/docs/docs/modelagem/historiaDeUsuario/co-agricultor>. Acesso em: 07 de julho de 2025.
-
-## Referências Bibliográficas
-
-> [1] ISO/IEC. ISO/IEC 25010:2011 — Systems and software engineering – Systems and software Quality Requirements and Evaluation (SQuaRE) – System and software quality models. International Organization for Standardization, 2011.
-
-> [2] NIELSEN, Jakob. Mobile Usability. Berkeley: New Riders Pub, 2012.
-
-## Histórico de Versões
-
-|Versão|Data|Descrição|Autor|Revisor|
-|:----:|----|---------|-----|:-------:|
-|`1.0`|07/07/2025|Criação do documento| [Weverton Rodrigues](https://github.com/vevetin) | [Ana Júlia](https://github.com/ailujana) |
-|`1.1`|07/07/2025|Melhoria da escrita|[Maria Clara](https://github.com/Oleari19)| [Maurício Ferreira](https://github.com/mauricio-araujoo) |
+>  ISO/IEC 25010. Disponível em: <https://iso25000.com/index.php/en/iso-25000-standards/iso-25010>. Acesso em: 19 de maio de 2025.
